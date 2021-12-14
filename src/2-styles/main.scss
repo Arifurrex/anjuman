@@ -1,0 +1,28 @@
+// 1 - HELPERS
+@import '1-helpers/root';
+@import '1-helpers/mixins';
+
+// 2 - BASICS
+@import '2-basics/reset';
+@import '2-basics/btn';
+@import '2-basics/social-icon';
+
+// 3 - LAYOUT
+@import '3-layout/_1header.scss';
+@import '3-layout/hero';
+@import '3-layout/news';
+@import '3-layout/_5footer.scss';
+@import '3-layout/admin-header';
+@import '3-layout/admin.table';
+@import '3-layout/admin-post';
+@import '3-layout/admin-update-pots';
+@import '3-layout/admin-add-user';
+@import '3-layout/_adminindex';
+// @import '3-layout/testomonial';
+// @import '3-layout/6aboutus';
+// @import '3-layout/contact';
+// @import '3-layout/_CustomerUI.scss';
+
+// 4 - PAGES
+@import '4-pages/index';
+@import '4-pages/single';

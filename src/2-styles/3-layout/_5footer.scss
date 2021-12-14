@@ -1,0 +1,123 @@
+.letstalk {
+  position: absolute;
+  width: 100%;
+  top: -190px;
+  text-transform: capitalize;
+  color: var(--clr-ligh);
+
+  .letstalk-card {
+    background-color: var(--clr-radish);
+    padding: 4em;
+    justify-content: center;
+    gap: 1em;
+    box-shadow: var(--bs);
+    .letstalk-card__descrip {
+      width: 500px;
+      max-width: 500px;
+      font-size: 1rem;
+      font-size: clamp(0.75rem, calc(3vw+1rem), 1rem);
+      font-weight: var(--fw-ligh);
+      text-align: center;
+    }
+    .letstalk--btn {
+      flex-shrink: 0;
+    }
+  }
+  @media all and (min-width: 768px) {
+    .letstalk-card {
+      width: 80%;
+      margin: 0 auto;
+      border-radius: var(--border-radius);
+    }
+  }
+}
+// fooer
+.footer--container > * + * {
+  margin-top: 1em;
+}
+footer {
+  position: relative;
+  font-family: var(--ff-primary);
+  padding: 6em 0 1em 0;
+  margin-top: 15em;
+  background-color: var(--clr-dark);
+  color: var(--clr-ligh);
+  height: 100%;
+  background: url('/images/pattern-hills.svg') bottom/100% 20% no-repeat,
+    var(--clr-dark);
+  background-repeat: no-repeat;
+  .footer--container {
+    .footer-nav {
+      @include flex(flex, column, center, center);
+      .logo-image {
+        width: 200px;
+      }
+      .footer-nav-list {
+        padding: 0;
+        gap: 1em;
+        @include flex(flex, column, space-between, center);
+      }
+    }
+
+    @media all and (min-width: 768px) {
+      .footer-nav {
+        @include flex(flex, row, space-between, center);
+        .logo-image {
+          width: 200px;
+        }
+        .footer-nav-list {
+          padding: 0;
+          gap: 3em;
+          @include flex(flex, row, space-between, center);
+          letter-spacing: 0.12em;
+          font-size: 1rem;
+          font-size: clamp(0.75rem, calc(3vw+1rem), 1rem);
+        }
+      }
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background-color: var(--clr-hashligh);
+    }
+    .footer-alinessa {
+      text-align: center;
+      color: var(--clr-lessradish);
+      a {
+        color: var(--clr-lessradish);
+        cursor: pointer;
+        :hover {
+          color: rgb(218, 216, 216);
+        }
+      }
+    }
+    .footer-details {
+      @include flex(flex, row, space-between, flex-end);
+      gap: 1em;
+      flex-wrap: wrap;
+      .footer-details-location {
+        width: 300px;
+        color: var(--clr-hash);
+        font-weight: var(--fw-bold);
+      }
+      .footer-details-contact {
+        width: 300px;
+        color: var(--clr-hash);
+        font-weight: var(--fw-bold);
+      }
+      // social icon
+      .footer-details-social {
+        width: 300px;
+        height: 40px;
+        @include flex(flex, row, space-between, center);
+      }
+    }
+  }
+
+  // footer-details end
+}
+@media (max-width: 1024px) {
+  footer {
+    padding-top: 9em;
+  }
+}

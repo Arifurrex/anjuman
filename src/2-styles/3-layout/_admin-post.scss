@@ -1,0 +1,21 @@
+.postinsert__header {
+  @include flex(flex, row, space-between, center);
+  .postinsert__title {
+    text-transform: capitalize;
+    color: var(--clr-green);
+  }
+  .postinsert__but {
+    padding: 0.4em 0.8em;
+    background: var(--clr-green);
+    color: var(--clr-ligh);
+    cursor: pointer;
+  }
+}
+.fa-trash {
+  color: var(--clr-red);
+  cursor: pointer;
+}
+.fa-edit {
+  color: var(--clr-green);
+  cursor: pointer;
+}

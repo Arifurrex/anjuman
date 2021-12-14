@@ -1,0 +1,43 @@
+.single-pos {
+  padding: 1em;
+  .single-pos__lefside {
+    .single-pos__title {
+      color: var(--clr-ligh);
+      line-height: 1.6;
+      &:hover {
+        color: var(--clr-red);
+      }
+    }
+
+    .tagline {
+      @include flex(flex, row, flex-start, center);
+      gap: 1em;
+      margin-top: 1em;
+      color: var(--clr-lessradish);
+      font-size: 0.85rem;
+      font-size: clamp(0.65rem, calc(3vw+1rem), 0.85rem);
+      .fa,
+      .fas {
+        margin-right: 2px;
+        font-size: 0.75em;
+        color: var(--clr-red);
+        opacity: 0.8;
+        &:hover {
+          color: var(--clr-orange);
+        }
+      }
+      &:hover {
+        color: var(--clr-orange);
+      }
+    }
+  }
+  .single-pos__righside {
+    .pos__paragraph {
+      margin-top: 1em;
+      font-weight: 400;
+      color: var(--clr-ligh);
+    }
+  }
+
+  //   ======
+}

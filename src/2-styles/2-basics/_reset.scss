@@ -1,0 +1,106 @@
+// typhography
+.paragraph {
+  font-size: 1rem;
+  font-size: clamp(0.85rem, calc(3vw+1rem), 1rem);
+  font-weight: var(--var-ligh);
+}
+::placeholder {
+  color: var(--clr-dark);
+  font-size: 1rem;
+  font-size: clamp(0.85rem, calc(3vw+1rem), 1rem);
+  font-weight: var(--var-ligh);
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1;
+}
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.btn {
+  display: inline-block;
+  padding: 1em 2.4em;
+  background: var(--clr-ligh);
+  text-decoration: none;
+  color: var(--clr-dark);
+  font-weight: var(--fw-bolder);
+  cursor: pointer;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-size: clamp(0.2rem, calc(3vw+1rem), 0.8rem);
+  letter-spacing: 2px;
+  font-weight: var(--fw-bolder);
+  transition: transform 200ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-wrap {
+  //when u will use flex-wrap use flex-grow:1 and width: ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+// grid base /
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+}
+.border {
+  border: 2px solid red;
+}
+.border2 {
+  border: 1px solid orange;
+}
+body {
+  margin: 0;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-size: var(--fs-body);
+  line-height: 2;
+  // perspective: 10000;
+  // overflow-x: hidden;
+  // position: relative;
+  // background: var(--clr-bg);
+}

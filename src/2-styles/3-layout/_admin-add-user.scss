@@ -1,0 +1,149 @@
+.admin-content {
+  background-image: url('/images/pe.svg');
+  background-size: cover;
+  background-position: center;
+  // height: 100vh;
+}
+.contact__form {
+  padding: 2em 0.5em;
+  width: 100%;
+  margin: 0 auto;
+  form {
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.05)
+    );
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa,
+      1px 1px 2px #555;
+    backdrop-filter: blur(0.8rem);
+    color: rgb(246, 246, 246);
+    @include flex(flex, column, center, space-between);
+    padding: 2em;
+    border-radius: var(--border-radius);
+    .add-user-header {
+      color: var(--clr-radish);
+      align-self: flex-end;
+    }
+    .from-control {
+      input:focus {
+        outline: none;
+      }
+
+      option {
+        padding: 2em;
+        font-size: 1rem;
+      }
+
+      input[type='text'],
+      input[type='email'],
+      select {
+        background: linear-gradient(
+          to bottom right,
+          rgba(133, 123, 123, 0.2),
+          rgba(255, 255, 255, 0.05)
+        );
+        backdrop-filter: blur(0.8rem);
+        border: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+        width: 100%;
+        padding: 1em;
+        font-size: 1rem;
+        font-size: clamp(0.85rem, calc(3vw+1rem), 1rem);
+        font-weight: var(--var-ligh);
+        text-transform: capitalize;
+      }
+
+      &:nth-last-child(1) {
+        align-self: flex-end;
+        .btn {
+          border: none;
+        }
+      }
+      ::placeholder {
+        color: var(--clr-radish);
+      }
+    }
+  }
+}
+@media all and (min-width: 768px) {
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+    padding: 4em;
+    border-radius: var(--border-radius);
+    // par one
+    .contact__text {
+      max-width: 100%;
+      padding: 0em;
+      text-align: left;
+    }
+    // par wo
+    .contact__form {
+      padding: 0em;
+      width: 100%;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  // par wo
+  .contact__form {
+    padding: 2em 0.5em;
+    width: 50%;
+    form {
+      @include flex(flex, column, center, space-between);
+      .from-control {
+        margin-top: 1em;
+        input:focus {
+          outline: none;
+        }
+
+        option {
+          width: 100%;
+          padding: 2em;
+          font-size: 1rem;
+        }
+        input[type='text'],
+        input[type='email'],
+        select {
+          // background: var(--clr-radish);
+          color: var(--clr-ligh);
+          border: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+          width: 100%;
+          padding: 1em;
+          font-size: 1rem;
+          font-size: clamp(0.85rem, calc(3vw+1rem), 1rem);
+          font-weight: var(--var-ligh);
+          text-transform: capitalize;
+          color: var(--clr-radish);
+        }
+
+        &:nth-last-child(1) {
+          align-self: flex-end;
+          border: none;
+        }
+      }
+    }
+  }
+}
+select {
+  width: 100%;
+  padding: 2em 0;
+  background: red;
+  font-size: 2rem;
+  outline: none;
+  option {
+    padding: 2em;
+    font-size: 1rem;
+  }
+}
+.alert {
+  display: flex;
+  justify-content: space-between;
+  background: var(--clr-red);
+  color: var(--clr-ligh);
+  opacity: 0.7;
+  padding: 1em;
+}

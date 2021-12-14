@@ -1,0 +1,86 @@
+.table-wrapper {
+  padding: 2em;
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+    .postinsert__header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    background: red;
+}
+    
+  .table td,
+  .table th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .table th {
+    background-color: var(--clr-greeny);
+    color: #ffffff;
+  }
+
+  .table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  .table tbody tr:nth-child(odd) {
+    background-color: #a3a3a3;
+  }
+  .table_image {
+    width: 50px;
+    height: 50px;
+  }
+  /*responsive*/
+
+  @media (max-width: 500px) {
+    .table thead {
+      display: none;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+      display: block;
+      width: 100%;
+    }
+    .table tr {
+      margin-bottom: 15px;
+    }
+    .table td {
+      text-align: right;
+      padding-left: 50%;
+      text-align: right;
+      position: relative;
+    }
+    .table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+}
+.paginatinon {
+  @include flex(flex, row, center, center);
+  gap: 1em;
+  .btn {
+    background: var(--clr-green);
+    color: var(--clr-ligh);
+    padding: 0.2em 0.5em;
+    margin-bottom: 1em;
+  }
+  .active {
+    background: orange;
+  }
+}

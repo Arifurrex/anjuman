@@ -1,0 +1,605 @@
+[13-Feb-2021 17:59:22 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 17:59:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(39): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 18:20:43 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 18:20:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(39): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 18:23:28 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 18:23:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(39): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 18:24:53 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 18:24:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(39): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 18:24:56 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 18:24:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(39): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 18:26:31 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 18:26:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(39): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 19:03:09 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 19:03:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(39): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 19:26:29 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 19:26:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 20:03:41 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 20:03:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 20:50:12 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 20:50:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 21:00:11 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 21:00:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 21:00:11 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 21:00:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 21:55:49 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 21:55:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Feb-2021 23:14:36 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[13-Feb-2021 23:14:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 04:23:18 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 04:23:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 05:24:49 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 05:24:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 05:33:45 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 05:33:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 05:33:49 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 05:33:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 05:33:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 05:33:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 05:33:54 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 05:33:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 05:33:57 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 05:33:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 05:34:53 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 05:34:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 05:34:56 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 05:34:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 05:35:21 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 05:35:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 05:47:35 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 05:47:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/index.php(5): include()
+#1 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 06:07:22 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:07:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 06:09:22 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:09:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(45): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 06:10:37 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:10:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 06:10:40 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:10:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 06:15:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:16:35 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:16:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 06:16:51 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:16:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 06:16:54 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:16:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(44): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[14-Feb-2021 06:17:06 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:17:18 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:49:23 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:49:24 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:49:30 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:49:34 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'arifur'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:52:48 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'anjumane'@'localhost' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:53:17 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:53:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[14-Feb-2021 06:53:37 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'anjumane'@'usaserver.hostingbangladesh.com' (using password: YES) in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[05-Mar-2021 21:14:33 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[05-Mar-2021 21:14:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:26:24 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:26:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:26:29 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:26:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:27:23 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:27:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:27:38 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:27:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:42:56 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:42:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:42:56 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:42:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:42:56 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:42:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:43:26 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:43:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:43:26 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:43:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:43:26 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:43:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:43:43 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:43:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:43:43 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:43:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:43:43 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:43:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:09 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:09 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:09 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:40 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:47 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:47 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:44:47 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:44:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:46:51 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:46:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:46:51 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:46:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:46:51 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:46:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:12 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:12 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:12 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:27 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[06-Mar-2021 12:47:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home2/anjumane/public_html/includes/dbh.inc.php on line 6
+[06-Mar-2021 12:47:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set_charset() on boolean in /home2/anjumane/public_html/includes/dbh.inc.php:7
+Stack trace:
+#0 /home2/anjumane/public_html/header.php(32): include()
+#1 /home2/anjumane/public_html/index.php(3): include('/home2/anjumane...')
+#2 {main}
+  thrown in /home2/anjumane/public_html/includes/dbh.inc.php on line 7
+[13-Mar-2021 05:35:29 UTC] PHP Parse error:  syntax error, unexpected '*' in /home2/anjumane/public_html/hero.php on line 64
+[13-Mar-2021 05:35:41 UTC] PHP Parse error:  syntax error, unexpected '*' in /home2/anjumane/public_html/hero.php on line 64
+[13-Mar-2021 05:36:04 UTC] PHP Parse error:  syntax error, unexpected '*' in /home2/anjumane/public_html/hero.php on line 64
+[13-Mar-2021 05:36:41 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home2/anjumane/public_html/hero.php on line 64
+[13-Mar-2021 05:41:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_num_rows() in /home2/anjumane/public_html/hero.php:63
+Stack trace:
+#0 /home2/anjumane/public_html/index.php(4): include()
+#1 {main}
+  thrown in /home2/anjumane/public_html/hero.php on line 63
+[13-Mar-2021 05:41:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_num_rows() in /home2/anjumane/public_html/hero.php:63
+Stack trace:
+#0 /home2/anjumane/public_html/index.php(4): include()
+#1 {main}
+  thrown in /home2/anjumane/public_html/hero.php on line 63

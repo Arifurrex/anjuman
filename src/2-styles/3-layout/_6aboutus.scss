@@ -1,0 +1,36 @@
+.aboutus {
+  margin-top: 2em;
+  padding-bottom: 2em;
+  color: var(--clr-ligh);
+  .flex-wrap {
+    //when u will use flex-wrap use flex-grow:1 and width: ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    // box-shadow: var(--bs);
+    background: var(--clr-radish);
+    border-radius: 10px;
+    overflow: hidden;
+    .aboutus__image {
+      width: 400px;
+      flex-grow: 1;
+      display: block;
+      object-position: center;
+      object-fit: cover;
+    }
+    .aboutus__descrip-container {
+      .aboutus__title {
+        margin-bottom: 1em;
+      }
+      text-align: left;
+      width: 500px;
+      flex-grow: 1;
+      padding: 2em;
+      text-transform: capitalize;
+      // .aboutus__descrip {
+      // }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.contact {
+  margin-top: 2em;
+  max-width: 1150px;
+  @include flex(flex, column, center, center);
+  background: var(--clr-radish);
+  color: var(--clr-ligh);
+  text-transform: capitalize;
+  // par one
+  .contact__text {
+    max-width: 500px;
+    padding: 2em 1em;
+    text-align: center;
+    font-weight: var(--fw-ligh);
+  }
+  // par wo
+  .contact__form {
+    padding: 2em 1em;
+    width: 100%;
+    form {
+      @include flex(flex, column, center, space-between);
+      .from-control {
+        margin-top: 1em;
+        input:focus {
+          outline: none;
+        }
+        input[type='text'],
+        input[type='email'] {
+          background: var(--clr-radish);
+          color: var(--clr-ligh);
+          border: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+          width: 100%;
+          padding: 1em;
+          font-size: 1rem;
+          font-size: clamp(0.85rem, calc(3vw+1rem), 1rem);
+          font-weight: var(--var-ligh);
+          text-transform: capitalize;
+        }
+
+        &:nth-last-child(1) {
+          align-self: flex-end;
+          .btn {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 768px) {
+  .contact {
+    margin-top: 2em;
+    width: 80%;
+    margin: 0 auto;
+    padding: 4em;
+    border-radius: var(--border-radius);
+    // par one
+    .contact__text {
+      max-width: 100%;
+      padding: 0em;
+      text-align: left;
+    }
+    // par wo
+    .contact__form {
+      padding: 0em;
+      width: 100%;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .contact {
+    margin-top: 2em;
+    @include flex(flex, row, center, center);
+    gap: 2em;
+
+    // par one
+    .contact__text {
+      text-align: left;
+    }
+    // par wo
+    .contact__form {
+      padding: 2em 1em;
+      width: 100%;
+      form {
+        @include flex(flex, column, center, space-between);
+        .from-control {
+          margin-top: 1em;
+          input:focus {
+            outline: none;
+          }
+          input[type='text'],
+          input[type='email'] {
+            background: var(--clr-radish);
+            color: var(--clr-ligh);
+            border: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+            width: 100%;
+            padding: 1em;
+            font-size: 1rem;
+            font-size: clamp(0.85rem, calc(3vw+1rem), 1rem);
+            font-weight: var(--var-ligh);
+            text-transform: capitalize;
+          }
+
+          &:nth-last-child(1) {
+            align-self: flex-end;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

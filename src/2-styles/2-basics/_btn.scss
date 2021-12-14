@@ -1,0 +1,178 @@
+.btn_1 {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s linear;
+}
+.btn_1::after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #616161;
+  transition: 0.5s;
+  z-index: -1;
+}
+.btn_1:hover:after {
+  width: 100%;
+}
+.btn_1:hover {
+  color: white;
+  transition: 0.5s;
+}
+// =====
+/*btn-2*/
+.btn_2 {
+  position: relative;
+  overflow: hidden;
+  transition: 1.5s ease-in-out;
+}
+.btn_2::after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #616161;
+  z-index: -1;
+  transition: 0.5s;
+  //   border-radius: inherit;
+}
+.btn_2:hover:after {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+.btn_2:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+/*btn-3*/
+.btn_3 {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btn_3::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background-color: #616161;
+  transition: 0.5s;
+  z-index: -1;
+}
+.btn_3:hover:after {
+  height: 100%;
+}
+.btn_3:hover {
+  color: var(--clr-radish);
+  transition: 0.5s;
+}
+/*btn-4*/
+.btn_4 {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btn_4::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  background-color: #616161;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn_4:hover:after {
+  height: 100%;
+}
+.btn_4:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+/*btn-5*/
+
+.btn_5 {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btn_5::after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #616161;
+  transition: 0.5s;
+  z-index: -1;
+}
+.btn_5:hover:after {
+  width: 50%;
+}
+.btn_5::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #616161;
+  transition: 0.5s;
+  z-index: -1;
+}
+.btn_5:hover:before {
+  width: 50%;
+}
+.btn_5:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+/*btn-6*/
+.btn_6 {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btn_6::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background-color: #616161;
+  transition: 0.5s;
+  z-index: -1;
+}
+.btn_6:hover:after {
+  height: 50%;
+}
+.btn_6::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  background-color: #616161;
+  transition: 0.5s;
+  z-index: -1;
+}
+.btn_6:hover:before {
+  height: 50%;
+}
+.btn_6:hover {
+  color: white;
+  transition: 0.5s;
+}

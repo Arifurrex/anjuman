@@ -8,95 +8,73 @@
     <link rel="stylesheet" href="src/owl.carousel.min.css" />
     <link rel="stylesheet" href="src/superslides.css" />
     <link rel="stylesheet" href="src/2-styles/main.css" />
-    <link rel="stylesheet" href="src/2-styles/main.css">
     <link rel="shortcut icon" type="image/png" href="images/linkicon.png" sizes="32x32"/>
     <title>Anjumane Hefajothe Islam Bangladesh</title>
+    <script src="src/1-scripts/nav.js" defer></script>
   </head>
   <body>
-    <!-- ============================ -->
-    <!-- header start from here  -->
-    <!-- ============================ -->
-    <header>
-         test
-      <nav>
-          <a href="https://www.anjumanehefajoth.com/index.php" class="logo-image lgohide">
-            <img src="images/Only Logo.bmp" alt="logo-light" />
-         </a>
-         <a href="https://www.anjumanehefajoth.com/index.php" class="logo-image logohide2">
-            <img src="images/Only Logo.bmp" alt="anjuman-e hefajoth-e islam " />
-         </a>
-         <a href="https://www.anjumanehefajoth.com" class="logo-image logohide">
-         আঞ্জুমানে হেফাযত
-         </a>
-        <ul class="nav-list">
-        <?php
-include 'includes/dbh.inc.php';
-$sql = "select * from category where post > 0";
-$res = mysqli_query($conn, $sql) or die('query failed');
-?>
-        <?php
-while ($row = mysqli_fetch_assoc($res)) {
-    if (isset($_GET['catid'])) {
-        if ($row['category_id'] == $_GET['catid']) {
-            $active = "active";
-        } else {
-            $active = "";
-        }
-    } else {
-        $active = "";
-    }
-    ?>
-
-          <li class="nav-list-item ">
-          <a class="<?=$active?>" href="http://anjumanehefajoth.com/category.php?catid=<?=$row['category_id']?>" class="black nav-links"
-            ><?=$row['category_name']?></a
-          >
-        </li>
-        <?php
-}
-?>
-        </ul>
-
-        <!-- this humburger button  -->
-        <div class="menu-btn">
-          <div class="menu-btn__burger"></div>
+   <div class="container" style="border:3px solid green;">
+      <section class="header">
+        <div class="logo">anjuman</div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
-        <!-- this id for mobile device  -->
-        <div class="mobile-white-background">  </div>
-        <div class="mobile-nav-block">
-          <ul class="mobile-nav-list">
-             <!-- ===== -->
-             <?php
-include 'includes/dbh.inc.php';
-$sql = "select * from category where post > 0";
-$res = mysqli_query($conn, $sql) or die('query failed');
-?>
-             <?php
-while ($row = mysqli_fetch_assoc($res)) {
-    if (isset($_GET['catid'])) {
-        if ($row['category_id'] == $_GET['catid']) {
-            $active = "active";
-        } else {
-            $active = "";
-        }
-    } else {
-        $active = "";
-    }
-    ?>
-
-           <li class="mobile-nav-list-item">
-            <a href="http://anjumanehefajoth.com/category.php?catid=<?=$row['category_id']?>" class=""
-            ><?=$row['category_name']?> </a>
-            </li>
-        <?php
-}
-?>
-             <!-- ======= -->
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- ============================ -->
-    <!-- header end from here  -->
-    <!-- ============================ -->
-  
+        <nav>
+          <a href="#" class="link">আমাদের সম্পর্কে</a>
+          <a href="#" class="link">কার্যক্রম</a>
+          <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button>কমিটি</button>
+            <div class="dropdown-menu information-grid">
+              <div>
+                <h1 class="dropdown-heading">বিভাগ</h1>
+                <div class="dropdown-links">
+                  <div class="link-sub-wrapper">
+                    <a href="#" class="link link--sub"
+                      >ঢাকা
+                      <div class="dropdown-links link-sub-sub-wrapper">
+                        <a href="#" class="link">জেলা কমিটি</a>
+                        <a href="#" class="link">মহানগর কমিটি</a>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- -------sub sub---------- -->
+                  <div class="link-sub-wrapper">
+                    <a href="#" class="link link--sub"
+                      >সিলেট
+                      <div class="dropdown-links link-sub-sub-wrapper">
+                        <a href="#" class="link">জেলা কমিটি</a>
+                        <a href="#" class="link">মহানগর কমিটি</a>
+                      </div>
+                    </a>
+                  </div>
+                  <a href="#" class="link">রাজশাহী</a>
+                  <a href="#" class="link">ময়মনসিংহঃ</a>
+                  <a href="#" class="link">খুলনা</a>
+                  <a href="#" class="link">চিটাগাং</a>
+                  <a href="#" class="link">বরিশাল</a>
+                </div>
+              </div>
+              <div>
+                <h1 class="dropdown-heading">কমিটি</h1>
+                <div class="dropdown-links">
+                  <a href="#" class="link">কেন্দ্রীয় কমিটি</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="link">ইভেন্ট</a>
+          <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button>Login</button>
+            <div class="dropdown-menu">
+              <form class="login-form">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+                <button type="submit">Login</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </div>

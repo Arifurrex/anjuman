@@ -13,7 +13,7 @@
     <script src="src/1-scripts/nav.js" defer></script>
   </head>
   <body>
-   <div class="container" style="border:3px solid green;">
+   <div class="container">
       <section class="header">
         <div class="logo">anjuman</div>
         <div class="hamburger">

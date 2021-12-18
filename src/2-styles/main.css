@@ -695,13 +695,6 @@ select {
   background-image: url(/assets/shared/desktop/icon-instagram-color.svg);
 }
 
-.container {
-  max-width: 64em;
-  margin: 0 auto;
-  padding-inline: 2em;
-  border: 2px solid red;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -1371,7 +1364,6 @@ nav {
   top: -190px;
   text-transform: capitalize;
   color: var(--clr-ligh);
-  border: 2px solid orange;
 }
 
 .letstalk .letstalk-card {

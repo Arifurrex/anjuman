@@ -14,6 +14,8 @@ order by post_id desc
 limit $offset,$limit";
 $resl=mysqli_query($conn,$sql) or die('quer failed'); 
 ?>
+<div class="container">
+
   <section class="news">
       <div class="title">
           <h3>সংবাদ</h3>
@@ -74,3 +76,4 @@ $resl=mysqli_query($conn,$sql) or die('quer failed');
 
     </main>
     </section>
+</div>

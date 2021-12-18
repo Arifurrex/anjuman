@@ -21,16 +21,16 @@
 .flow--space-small {
     --flow-space: .75rem;
 }
-// .container {
-//   width: 80%;
-//   margin: 0 auto;
-//   max-width: 1150px;
-// }
 .container {
-    padding-inline: 2em;
-    margin-inline : auto;
-    max-width     : 80rem;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1650px;
 }
+// .container {
+//     padding-inline: 2em;
+//     margin-inline : auto;
+//     max-width     : 85rem;
+// }
 .row {
   display: flex;
   justify-content: center;

@@ -11,7 +11,8 @@
     $Bdate = BDdate($time);
     // echo $Bdate;
     ?>
-    
+   <div class="container">
+
     <section class="hero-section">
       <!-- === -->
       <div class="slider" id="slides">
@@ -103,3 +104,4 @@
         </div>
       </div>
     </section>
+   </div> 

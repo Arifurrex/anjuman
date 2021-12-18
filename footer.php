@@ -1,6 +1,7 @@
 <!-- ============================ -->
 <!-- footer section start from here  -->
 <!-- ============================ -->
+<div class="container">
 
 <footer>
   <section class="letstalk">
@@ -12,7 +13,7 @@
           আঞ্জুমানের সকল কার্যক্রমে হবে
         </p>
       </div>
-      <a href="https://anjumanehefajoth.com/membershipform.php" class="btn letstalk--btn">সদস্য ফরম </a>
+      <a href="#" class="btn letstalk--btn">সদস্য ফরম </a>
     </div>
   </section>
   <div class="container footer--container">
@@ -41,6 +42,7 @@
   <!-- === -->
 
 </footer>
+</div>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
 </script>

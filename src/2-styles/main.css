@@ -34,6 +34,7 @@ html {
   --c-green-1: hsl(141, 88%, 40%);
   --c-green-2: hsl(141, 88%, 30%);
   --c-green-3: hsl(141, 88%, 20%);
+  --c-green-01: hsl(159, 88%, 32%, 15%);
   --clr-ligh: #a7c5eb;
   --clr-red: #d7385e;
   --clr-greeny: #0a993c;
@@ -1088,6 +1089,37 @@ nav {
 
 .contactEmail .contact-top {
   flex-basis: 120px;
+}
+
+.history {
+  padding: 2em;
+  background-color: var(--c-green-01);
+}
+
+.history .flex-wrap h1 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-size: clamp(1.3rem, calc(3vw+1rem), 2rem);
+}
+
+.history .flex-wrap p {
+  margin-top: 2em;
+  font-size: 1rem;
+  font-size: clamp(1rem, calc(3vw+1rem), 1.2rem);
+  text-align: justify;
+}
+
+.history .flex-wrap button {
+  padding: 0.5em 2em;
+  border: none;
+  background-color: var(--c-green-1);
+  cursor: pointer;
+}
+
+@media (min-width: 1128px) {
+  .history .flex-wrap {
+    margin-left: 10rem;
+  }
 }
 
 .news {

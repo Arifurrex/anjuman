@@ -1,0 +1,11 @@
+.contactEmail {
+    background-color: var(--c-green-3);
+    color: var(--c-green-0);
+    .flex-wrap {
+        padding-block: 2em;
+        justify-content: space-around;
+    }
+    .contact-top {
+        flex-basis: 120px;
+    }
+}

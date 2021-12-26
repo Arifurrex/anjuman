@@ -6,12 +6,17 @@
             text-align: center;
             font-size: 1.3rem;
             font-size: clamp(1.3rem, calc(3vw+1rem), 2rem);
+            line-height: 1.5;
         }
         p {
             margin-top: 2em;
             font-size: 1rem;
             font-size: clamp(1rem, calc(3vw+1rem), 1.2rem);
             text-align: justify;
+
+            #more{
+               display:none;
+            }
         }
         button {
             padding: 0.5em 2em;

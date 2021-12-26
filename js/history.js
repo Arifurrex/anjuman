@@ -1,2 +1,4 @@
-const history = document.querySelector(#history);
-history.innerHtml = "hello";
+const historyButton = document.getElementById("historyButton");
+historyButton.addEventListener('click', function () {
+    
+})

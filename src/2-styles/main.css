@@ -1149,8 +1149,57 @@ nav {
 
 @media (max-width: 768px) {
   .pillar {
-    display: none;
+    display: hidden;
   }
+}
+
+.events {
+  padding-block: 2em;
+}
+
+.events h1 {
+  text-align: center;
+}
+
+.events .row {
+  padding-block: 2em;
+}
+
+.events .row .event {
+  padding: 1em;
+  background-color: var(--clr-DarkGrayishMagenta);
+  border: 2px solid green;
+}
+
+.events .row .event .event__date {
+  border: 1px solid yellow;
+  padding: 0.75em 2em;
+  background: var(--clr-hash);
+  gap: 1em;
+}
+
+.events .row .event .event__date .date {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, calc(3vw+1rem), 2rem);
+  font-weight: bolder;
+  color: var(--clr-ligh);
+}
+
+.events .row .event .event__date .month {
+  font: 1 rem;
+  color: var(--clr-ligh);
+}
+
+.events .row .event .event__details {
+  margin-top: 1em;
+}
+
+.events .row .event .event__details .details #Eventmore {
+  display: none;
+}
+
+.events .row .event button {
+  margin-top: 1em;
 }
 
 .news {

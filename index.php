@@ -5,6 +5,7 @@ include 'hero.php';
 include 'email&contact.php';
 include 'history.php';
 include 'pillar.php';
+include 'event.php';
 include 'includes/dbh.inc.php';
 include 'news.php';
 // include 'testomonial.php';

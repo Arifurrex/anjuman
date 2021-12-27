@@ -59,6 +59,7 @@
 <script src="js/typed.min.js"></script>
 <script src="./js/script.js"></script>
 <script src="js/history.js"></script>
+<script src="src/1-scripts/event.js"></script>
 <script src="src/1-scripts/script.js"></script>
 </body>
 

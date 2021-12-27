@@ -1,0 +1,41 @@
+.events {
+    padding-block: 2em;
+    h1 {
+        text-align: center;
+    }
+    .row {
+        padding-block: 2em;
+        .event {
+            padding: 1em;
+            background-color: var(--clr-DarkGrayishMagenta);
+            border: 2px solid green;
+            .event__date {
+                border: 1px solid yellow;
+                padding: 0.75em 2em;
+                background: var(--clr-hash);
+                gap: 1em;
+                .date {
+                    font-size: 1.5rem;
+                    font-size: clamp(1.5rem, calc(3vw+1rem), 2rem);
+                    font-weight: bolder;
+                    color: var(--clr-ligh);
+                }
+                .month {
+                    font: 1 rem;
+                    color: var(--clr-ligh);
+                }
+            }
+            .event__details {
+                margin-top: 1em;
+                .details {
+                    #Eventmore {
+                        display: none;
+                    }
+                }
+            }
+            button {
+                margin-top: 1em;
+            }
+        }
+    }
+}

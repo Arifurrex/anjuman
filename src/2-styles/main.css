@@ -1112,6 +1112,7 @@ nav {
 
 .history .flex-wrap p #more {
   display: none;
+  transition: all 1.5s ease-in-out;
 }
 
 .history .flex-wrap button {
@@ -1124,6 +1125,31 @@ nav {
 @media (min-width: 1128px) {
   .history .flex-wrap {
     margin-left: 10rem;
+  }
+}
+
+.pillar {
+  background-image: url(../../images/pillar/bgPillar2.png);
+  background-size: container;
+  background-position: bottom;
+  background-color: #484b48;
+  background-blend-mode: multiply;
+  color: #fff;
+}
+
+.pillar .row {
+  justify-content: space-around;
+  padding-block: 2em;
+}
+
+.pillar .row img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .pillar {
+    display: none;
   }
 }
 

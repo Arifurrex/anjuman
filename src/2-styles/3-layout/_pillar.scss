@@ -1,0 +1,22 @@
+.pillar {
+    background-image: url(../../images/pillar/bgPillar2.png);
+    background-size: container;
+    background-position: bottom;
+    background-color: hsl(120, 2%, 29%);
+    background-blend-mode: multiply;
+    color: #fff;
+
+    .row {
+        justify-content: space-around;
+        padding-block: 2em;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .pillar {
+        display: hidden;
+    }
+}

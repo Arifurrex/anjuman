@@ -14,8 +14,9 @@
             font-size: clamp(1rem, calc(3vw+1rem), 1.2rem);
             text-align: justify;
 
-            #more{
-               display:none;
+            #more {
+                display: none;
+                transition: all 1.5s ease-in-out;
             }
         }
         button {

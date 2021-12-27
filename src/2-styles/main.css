@@ -1110,6 +1110,10 @@ nav {
   text-align: justify;
 }
 
+.history .flex-wrap p #more {
+  display: none;
+}
+
 .history .flex-wrap button {
   padding: 0.5em 2em;
   border: none;

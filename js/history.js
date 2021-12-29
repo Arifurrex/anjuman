@@ -1,8 +1,8 @@
-const historyBtn = document.getElementById("historyButton");
+const historyBtn = document.getElementById("historyBtn");
 const dot = document.getElementById("dot");
 const moreText = document.getElementById("more");
 
-historyButton.addEventListener('click', function () {
+historyBtn.addEventListener('click', function () {
 
     if (dot.style.display === "none") {
         historyBtn.innerHTML = "বিস্তারিত জানতে";

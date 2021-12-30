@@ -1472,6 +1472,56 @@ nav {
   font-weight: var(--fw-ligh);
 }
 
+.comitte {
+  background-image: url(../../images/comitte/comitte-mobile-bg.png);
+  background-color: #484b48;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.comitte h1 {
+  font-size: 1.3rem;
+  font-size: clamp(1.3rem, calc(3vw+1rem), 2rem);
+  text-align: center;
+  padding-block: 2em;
+}
+
+.comitte .row {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding-bottom: 2em;
+}
+
+.comitte .row .card {
+  flex-basis: 300px;
+  flex-grow: 0;
+  padding: 0.5em;
+  background-color: var(--clr-White);
+  color: var(--clr-hashligh);
+  align-self: stretch;
+}
+
+.comitte .row .card .card__position {
+  margin-top: 0.5em;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, calc(3vw+0.85rem), 1rem);
+}
+
+.comitte .row .card .card__number {
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, calc(3vw+0.85rem), 1rem);
+}
+
+@media (min-width: 48rem) {
+  .comitte {
+    background-image: url(../../images/comitte/comitte-desktop-bg.png);
+    background-position: center;
+  }
+}
+
 .letstalk {
   position: absolute;
   width: 100%;

@@ -1160,12 +1160,8 @@ nav {
 }
 
 .pillar {
-  background-image: url(../../images/pillar/bgPillar2.png);
-  background-size: container;
-  background-position: bottom;
-  background-color: #484b48;
-  background-blend-mode: multiply;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 .pillar .row {

@@ -1,43 +1,41 @@
-
-.header{
-    display:flex;
+.header {
+    display: flex;
     justify-content: space-between;
-    align-items: baseline;   
-    background-color:var(--c-green-1);
-    font-size: clamp(.75rem,calc(1.5vw+1rem),2rem);
+    align-items: baseline;
+    background-color: var(--c-green-1);
+    font-size: 1rem;
+    font-size: clamp(1rem, calc(3vw+1rem), 1.3rem);
     color: hsl(120, 100%, 90%);
     text-transform: uppercase;
-    padding-inline: 2em;
-    position:relative;
-    
-    
+    padding: 0.5em 2em;
+    position: relative;
 }
 
- .hamburger{
-     display:block;
- }
+.hamburger {
+    display: block;
+}
 nav {
-    display         : none;
-    justify-content : flex-end;
-    align-items     : baseline;
-    padding         : .5rem;
-    gap             : 1rem;
+    display: none;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 0.5rem;
+    gap: 1rem;
     background-color: var(--c-green-1);
 }
- .link {
-    background     : none;
-    border         : none;
+.link {
+    background: none;
+    border: none;
     text-decoration: none;
-    color          : var(--c-violent-1);
-    font-family    : inherit;
-    font-size: clamp(.75rem, calc(1.5vw+1rem), 2rem);
-    font-weight    : var(--fw-light);
-    cursor         : pointer;
-    padding        : 0;
+    color: var(--c-violent-1);
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-size: clamp(0.85rem, calc(3vw+1rem), 1.3rem);
+    font-weight: var(--fw-light);
+    cursor: pointer;
+    padding: 0;
 }
 
-
-.dropdown.active>.link,
+.dropdown.active > .link,
 .link:hover {
     color: var(--c-violent-2);
 }
@@ -48,87 +46,83 @@ nav {
 
 .dropdown-menu {
     position: absolute;
-    top             : calc(100% + .25rem);
-    left:0;
+    top: calc(100% + 0.25rem);
+    left: 0;
     z-index: 999;
     background-color: white;
-    padding         : .75rem 2rem;
-    border-radius   : .25rem;
-    box-shadow      : 0 2px 5px 0 rgba(0, 0, 0, .1);
-    opacity         : 0;
-    pointer-events  : none;
-    transform       : translateY(-10px);
-    transition      : opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 
     .dropdown-heading {
         font-weight: var(--fw-bold);
-        color      : var(--c-violent-1);
+        color: var(--c-violent-1);
     }
 }
 
-.dropdown.active>.link+.dropdown-menu {
-    opacity       : 1;
-    transform     : translateY(0);
+.dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
     pointer-events: auto;
 }
 
-
-
 .dropdown-links {
-    display       : flex;
+    display: flex;
     flex-direction: column;
-    gap           : .25rem;
-    padding-left  : 1em;
-
+    gap: 0.25rem;
+    padding-left: 1em;
 }
-.link--sub{
-    color:red;
+.link--sub {
+    color: red;
     position: relative;
 }
 .link-sub-sub-wrapper {
-    display : none;
+    display: none;
     position: absolute;
-    right   : 100%;
-    top     : 0%;
-    padding : .75rem;
+    right: 100%;
+    top: 0%;
+    padding: 0.75rem;
 }
 
 .link-sub-wrapper:hover .link-sub-sub-wrapper {
     display: flex;
 }
 
-.login-form>input {
-    margin-bottom: .5rem;
+.login-form > input {
+    margin-bottom: 0.5rem;
 }
 
-.toggle{
+.toggle {
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
-    top:100%;
-    left:0;
-    z-index:999;
+    top: 100%;
+    left: 0;
+    z-index: 999;
 }
-// desktop version 
-@media(min-width:35em){
- .hamburger{
-     display:none;
-     width: 20px;
-     height:20px;
-     cursor: pointer;
-     
- } 
- 
- nav{
-     display:flex;
- } 
-.dropdown-menu {
-    left:-350px;
-}
-.information-grid {
-    display              : grid;
-    grid-template-columns: repeat(4, max-content);
-    gap                  : 2.5rem;
-}
+// desktop version
+@media (min-width: 35em) {
+    .hamburger {
+        display: none;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: flex;
+    }
+    .dropdown-menu {
+        left: -350px;
+    }
+    .information-grid {
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        gap: 2.5rem;
+    }
 }

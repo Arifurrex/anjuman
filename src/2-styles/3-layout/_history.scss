@@ -1,6 +1,6 @@
 .history {
-    padding: 2em;
-    background-color: var(--c-green-01);
+    padding-block: 2em;
+    background-color: var(--secondary);
     .flex-wrap {
         h1 {
             text-align: center;
@@ -9,7 +9,8 @@
             line-height: 1.5;
         }
         p {
-            margin-top: 2em;
+            margin-top: 1em;
+            padding-inline: 1em;
             font-size: 1rem;
             font-size: clamp(1rem, calc(3vw+1rem), 1.2rem);
             text-align: justify;
@@ -22,7 +23,8 @@
         button {
             padding: 0.5em 2em;
             border: none;
-            background-color: var(--c-green-1);
+            background-color: var(--accent);
+            color: var(--secondary);
             cursor: pointer;
         }
     }

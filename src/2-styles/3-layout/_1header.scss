@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    background-color: var(--c-green-1);
+    background-color: var(--primary);
     font-size: 1rem;
     font-size: clamp(1rem, calc(3vw+1rem), 1.3rem);
-    color: hsl(120, 100%, 90%);
+    color: var(--secondary);
     text-transform: uppercase;
     padding: 0.5em 2em;
     position: relative;
@@ -20,7 +20,6 @@ nav {
     align-items: baseline;
     padding: 0.5rem;
     gap: 1rem;
-    background-color: var(--c-green-1);
 }
 .link {
     background: none;
@@ -49,7 +48,7 @@ nav {
     top: calc(100% + 0.25rem);
     left: 0;
     z-index: 999;
-    background-color: white;
+    background-color: var(--primary);
     padding: 0.75rem 2rem;
     border-radius: 0.25rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -60,7 +59,7 @@ nav {
 
     .dropdown-heading {
         font-weight: var(--fw-bold);
-        color: var(--c-violent-1);
+        margin-top: 1em;
     }
 }
 
@@ -75,9 +74,9 @@ nav {
     flex-direction: column;
     gap: 0.25rem;
     padding-left: 1em;
+    margin-top: 1em;
 }
 .link--sub {
-    color: red;
     position: relative;
 }
 .link-sub-sub-wrapper {

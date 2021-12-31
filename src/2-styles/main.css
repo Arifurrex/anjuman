@@ -30,6 +30,10 @@ html {
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+  --primary: hsl(141, 64%, 37%);
+  --secondary: hsl(141, 5%, 95%);
+  --accent: hsl(101, 64%, 47%);
+  --clr-2: hsl(164, 84%, 15%);
   --c-green-0: hsl(141, 88%, 60%);
   --c-green-1: hsl(141, 88%, 40%);
   --c-green-2: hsl(141, 88%, 30%);
@@ -687,10 +691,10 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  background-color: var(--c-green-1);
+  background-color: var(--primary);
   font-size: 1rem;
   font-size: clamp(1rem, calc(3vw+1rem), 1.3rem);
-  color: #ccffcc;
+  color: var(--secondary);
   text-transform: uppercase;
   padding: 0.5em 2em;
   position: relative;
@@ -706,7 +710,6 @@ nav {
   align-items: baseline;
   padding: 0.5rem;
   gap: 1rem;
-  background-color: var(--c-green-1);
 }
 
 .link {
@@ -736,7 +739,7 @@ nav {
   top: calc(100% + 0.25rem);
   left: 0;
   z-index: 999;
-  background-color: white;
+  background-color: var(--primary);
   padding: 0.75rem 2rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -748,7 +751,7 @@ nav {
 
 .dropdown-menu .dropdown-heading {
   font-weight: var(--fw-bold);
-  color: var(--c-violent-1);
+  margin-top: 1em;
 }
 
 .dropdown.active > .link + .dropdown-menu {
@@ -762,10 +765,10 @@ nav {
   flex-direction: column;
   gap: 0.25rem;
   padding-left: 1em;
+  margin-top: 1em;
 }
 
 .link--sub {
-  color: red;
   position: relative;
 }
 

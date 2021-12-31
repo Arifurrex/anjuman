@@ -184,10 +184,8 @@
         .counter-wraper {
           @include flex(flex, row, space-between, center);
           flex-wrap: wrap;
+          gap: 1rem;
 
-          .counterr + .counterr {
-            margin-left: 1em;
-          }
           .counterr {
             @include flex(flex, column, space-between, center);
             width: 100px;
@@ -198,8 +196,9 @@
             background: var(--bgglass-clr);
             backdrop-filter: blur(0.8rem);
             box-shadow: var(--bs);
+
             .number-count {
-              margin-top: 3.5em;
+              margin-top: 1em;
             }
             .counter__icon {
               width: 58px;

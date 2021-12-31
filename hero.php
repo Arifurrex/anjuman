@@ -53,7 +53,6 @@
                   <div class="counter__icon">
                     <i class="fas fa-user"></i>
                   </div>
-                  <div class="statsSection">
                     <?php
                     @include_once('../anjoman/includes/dbh.inc.php');
                     $que = "SELECT * FROM members";
@@ -61,7 +60,6 @@
                     $num = mysqli_num_rows($resl);
                     ?>
                     <div class="number-count counter"><?= $num ?></div>
-                  </div>
                   <div class="counter__name">সদস্য</div>
                 </div>
 

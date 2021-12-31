@@ -1,9 +1,15 @@
 .hero-section {
-  height: 100vh;
   position: relative;
-  background: var(--clr-bg);
+  height: 400px;
+  padding-block: 2em;
+  background: var(--secondary);
   .slider {
     z-index: -1;
+    .slides-container {
+      img {
+        background-size: cover;
+      }
+    }
   }
 }
 // responsive mobile then laptop
@@ -36,7 +42,6 @@
     .glassleft-side {
       display: none;
     }
-
   }
 
   // ===================
@@ -114,7 +119,8 @@
 // desk
 @media (min-width: 900px) {
   .hero-section {
-    height: 100vh;
+    height: 600px;
+    padding-block: 2em;
   }
   .slider {
     position: relative;
@@ -238,6 +244,9 @@
     }
   }
 }
+
+//tablet
+
 ::placeholder {
   color: var(--clr-dark);
   font-size: 1rem;

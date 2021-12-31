@@ -820,13 +820,18 @@ nav {
 }
 
 .hero-section {
-  height: 100vh;
   position: relative;
-  background: var(--clr-bg);
+  height: 400px;
+  padding-block: 2em;
+  background: var(--secondary);
 }
 
 .hero-section .slider {
   z-index: -1;
+}
+
+.hero-section .slider .slides-container img {
+  background-size: cover;
 }
 
 .glass-container {
@@ -945,7 +950,8 @@ nav {
 
 @media (min-width: 900px) {
   .hero-section {
-    height: 100vh;
+    height: 600px;
+    padding-block: 2em;
   }
   .slider {
     position: relative;

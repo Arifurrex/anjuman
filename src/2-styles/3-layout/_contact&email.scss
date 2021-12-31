@@ -1,11 +1,27 @@
 .contactEmail {
-    background-color: var(--c-green-3);
-    color: var(--c-green-0);
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, calc(3vw+0.85rem), 1rem);
     .flex-wrap {
         padding-block: 2em;
         justify-content: space-around;
+        align-items: center;
     }
     .contact-top {
-        flex-basis: 120px;
+        flex-basis: 220px;
+        flex-grow: 1;
+        text-align: center;
+        span {
+            margin-right: 0.5em;
+        }
+    }
+    .email-top {
+        flex-basis: 220px;
+        flex-grow: 1;
+        text-align: center;
+        span {
+            margin-right: 0.5em;
+        }
     }
 }

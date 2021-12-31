@@ -1088,17 +1088,36 @@ nav {
 }
 
 .contactEmail {
-  background-color: var(--c-green-3);
-  color: var(--c-green-0);
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, calc(3vw+0.85rem), 1rem);
 }
 
 .contactEmail .flex-wrap {
   padding-block: 2em;
   justify-content: space-around;
+  align-items: center;
 }
 
 .contactEmail .contact-top {
-  flex-basis: 120px;
+  flex-basis: 220px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.contactEmail .contact-top span {
+  margin-right: 0.5em;
+}
+
+.contactEmail .email-top {
+  flex-basis: 220px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.contactEmail .email-top span {
+  margin-right: 0.5em;
 }
 
 .history {

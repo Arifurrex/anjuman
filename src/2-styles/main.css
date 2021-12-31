@@ -1090,8 +1090,8 @@ nav {
 .contactEmail {
   background-color: var(--primary);
   color: var(--secondary);
-  font-size: 0.75rem;
-  font-size: clamp(0.75rem, calc(3vw+0.85rem), 1rem);
+  font-size: 1rem;
+  font-size: clamp(1rem, calc(3vw+1rem), 1.2rem);
 }
 
 .contactEmail .flex-wrap {

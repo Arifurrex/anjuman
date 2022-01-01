@@ -1,0 +1,38 @@
+.history {
+    padding-block: 2em;
+    background-color: var(--secondary);
+    .flex-wrap {
+        h1 {
+            text-align: center;
+            font-size: 1.3rem;
+            font-size: clamp(1.3rem, calc(3vw+1rem), 2rem);
+            line-height: 1.5;
+        }
+        p {
+            margin-top: 1em;
+            padding-inline: 1em;
+            font-size: 1rem;
+            font-size: clamp(1rem, calc(3vw+1rem), 1.2rem);
+            text-align: justify;
+
+            #more {
+                display: none;
+                transition: all 1.5s ease-in-out;
+            }
+        }
+        button {
+            padding: 0.5em 2em;
+            border: none;
+            background-color: var(--accent);
+            color: var(--secondary);
+            cursor: pointer;
+        }
+    }
+}
+@media (min-width: 1128px) {
+    .history {
+        .flex-wrap {
+            margin-left: 10rem;
+        }
+    }
+}

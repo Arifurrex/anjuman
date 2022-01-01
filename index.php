@@ -1,11 +1,14 @@
-
+ 
 <?php
-include 'header.php'; 
-include 'hero.php';
+include 'frontend/header.php'; 
+include 'frontend/hero.php';
+include 'frontend/email&contact.php';
+include 'frontend/history.php';
+include 'frontend/pillar.php';
+include 'frontend/event.php';
 include 'includes/dbh.inc.php';
-include 'news.php';
-// include 'testomonial.php';
-// include 'CustomerUI.php';
-include 'footer.php'; 
+include 'frontend/news.php';
+include 'frontend/comitte.php';
+include 'frontend/footer.php'; 
 ?>
 

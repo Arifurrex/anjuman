@@ -18,7 +18,7 @@ $resl=mysqli_query($conn,$sql) or die('quer failed');
 
   <section class="news">
       <div class="title">
-          <h3>সংবাদ</h3>
+          <h1>সংবাদ</h1>
           <p class="subtitle">সত্য ও সুন্দরের পথে </p>
         </div>
     <main>

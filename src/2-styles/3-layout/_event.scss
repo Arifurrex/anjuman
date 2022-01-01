@@ -36,6 +36,7 @@
             .event__details {
                 gap: 1em;
                 margin-top: 1em;
+                color: var(--secondary);
                 .details {
                     font-size: 1rem;
                     font-size: clamp(1rem, calc(3vw+1rem), 1.2rem);

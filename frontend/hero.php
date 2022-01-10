@@ -1,5 +1,5 @@
     <?php
-    include 'support/bnTime.php';
+    include 'frontend/support/bnTime.php';
     function BDdate($time)
     {
       $bn = new BanglaDate($time);
@@ -54,7 +54,7 @@
                     <i class="fas fa-user"></i>
                   </div>
                     <?php
-                    @include_once('../anjoman/includes/dbh.inc.php');
+                    @include_once('includes/dbh.inc.php');
                     $que = "SELECT * FROM members";
                     $resl = mysqli_query($conn, $que) or die("query failed");
                     $num = mysqli_num_rows($resl);

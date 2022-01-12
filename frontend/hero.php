@@ -1,4 +1,11 @@
     <?php
+    $ckdbh= 'includes/dbh.inc.php';
+    if(file_exists($ckdbh)){
+      echo "database connected";
+    }else{
+      echo "database not connected";
+    }
+    
     include 'frontend/support/bnTime.php';
     function BDdate($time)
     {

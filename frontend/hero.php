@@ -53,13 +53,13 @@
                   <div class="counter__icon">
                     <i class="fas fa-user"></i>
                   </div>
-                    <?php
-                    @include_once('includes/dbh.inc.php');
-                    $que = "SELECT * FROM members";
-                    $resl = mysqli_query($conn, $que) or die("query failed");
-                    $num = mysqli_num_rows($resl);
-                    ?>
-                    <div class="number-count counter"><?= $num ?></div>
+                  <?php
+                  @include_once('includes/dbh.inc.php');
+                  $que = "SELECT * FROM members";
+                  $resl = mysqli_query($conn, $que) or die("query failed");
+                  $num = mysqli_num_rows($resl);
+                  ?>
+                  <div class="number-count counter"><?= $num ?></div>
                   <div class="counter__name">সদস্য</div>
                 </div>
 

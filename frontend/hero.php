@@ -7,7 +7,13 @@
       echo "database not connected";
     }
     
-   
+    $t='frontend/support/bnTime.php';
+    if (file_exists($t)) {
+      echo "t connected";
+    } else {
+      echo "t not connected";
+    }
+
     include 'frontend/support/bnTime.php';
     function BDdate($time)
     {

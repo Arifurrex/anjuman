@@ -68,6 +68,7 @@
                   $resl = mysqli_query($conn, $que) or die("query failed");
                   $num = mysqli_num_rows($resl);
                   ?>
+
                   <div class="counter__name">সদস্য</div>
                 </div>
 

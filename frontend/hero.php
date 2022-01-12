@@ -1,4 +1,5 @@
     <?php
+
     $ckdbh= 'includes/dbh.inc.php';
     if(file_exists($ckdbh)){
       echo "database connected";
@@ -6,6 +7,7 @@
       echo "database not connected";
     }
     
+   
     include 'frontend/support/bnTime.php';
     function BDdate($time)
     {
@@ -66,7 +68,6 @@
                   $resl = mysqli_query($conn, $que) or die("query failed");
                   $num = mysqli_num_rows($resl);
                   ?>
-                  <div class="number-count counter"><?= $num ?></div>
                   <div class="counter__name">সদস্য</div>
                 </div>
 

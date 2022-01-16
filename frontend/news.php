@@ -1,18 +1,23 @@
 <?php
-include 'includes/dbh.inc.php';
-$limit=6;
-if(isset($_GET['page'])){
-    $page=$_GET['page'];
-}else{
-    $page=1;
-}
-$offset=($page-1)*$limit;
-$sql="select * from post 
+if(file_exists('includes/dbh.inc.php')){
+    include 'includes/dbh.inc.php';
+    $limit = 6;
+    if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+    } else {
+        $page = 1;
+    }
+    $offset = ($page - 1) * $limit;
+    $sql = "select * from post 
 left join category on post.category=category.category_id
 left join user on post.author=user.user_id 
 order by post_id desc
 limit $offset,$limit";
-$resl=mysqli_query($conn,$sql) or die('quer failed'); 
+    $resl = mysqli_query($conn, $sql) or die('quer failed'); 
+}else{
+    echo "file not found";
+} 
+
 ?>
 <div class="container">
 

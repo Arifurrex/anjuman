@@ -1,5 +1,5 @@
 <?php
-$host = 'https://www.anjumanehefajoth.com/';
+$host = 'localhost';
 $user = 'root';
 $password = '';
 $database = 'anjumane_db';

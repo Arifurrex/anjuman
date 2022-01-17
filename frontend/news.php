@@ -1,6 +1,6 @@
 <?php
-if(file_exists('./includes/dbh.inc.php')){
-    include './includes/dbh.inc.php';
+if(file_exists('dbh.inc.php')){
+    include 'dbh.inc.php';
     $limit = 6;
     if (isset($_GET['page'])) {
         $page = $_GET['page'];

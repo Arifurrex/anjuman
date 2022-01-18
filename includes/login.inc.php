@@ -1,6 +1,6 @@
 <?php
 if($_POST['login']){
-    require_once '../includes/dbh.inc.php';
+    require_once 'dbh.inc.php';
     $username=mysqli_real_escape_string($conn,$_POST['username']);
     $pasi=mysqli_real_escape_string($conn,$_POST['password']);
     

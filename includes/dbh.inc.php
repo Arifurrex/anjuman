@@ -1,7 +1,7 @@
 <?php
-$host='localhost';
-$user='root';
-$password='';
+$host= 'https://www.anjumanehefajoth.com/';
+$user= 'anjumane_anjumane';
+$password= '102659anjumane';
 $database='anjumane_db';
 
 $conn=mysqli_connect($host,$user,$password,$database);

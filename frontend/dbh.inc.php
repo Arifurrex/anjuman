@@ -2,7 +2,7 @@
 $host = 'https://www.anjumanehefajoth.com/';
 $user = 'root';
 $password = '';
-$database = 'anjumane_masterbd';
+$database = 'anjumane_db';
 
 $conn = mysqli_connect($host, $user, $password, $database);
 $conn->set_charset("utf8");

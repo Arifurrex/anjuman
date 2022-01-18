@@ -63,18 +63,7 @@
             </div>
           </div>
           <a href="#" class="link">ইভেন্ট</a>
-          <div class="dropdown" data-dropdown>
-            <button class="link" data-dropdown-button>Login</button>
-            <div class="dropdown-menu">
-              <form class="login-form">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" />
-                <button type="submit">Login</button>
-              </form>
-            </div>
-          </div>
+          
         </nav>
       </section>
     </div>

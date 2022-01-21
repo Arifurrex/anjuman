@@ -6,16 +6,16 @@ if($_SESSION["role"] === 0){
 }
 ?>
  <?php
-    @include '/admin/starheader.php';
-    @include 'admin/starnavigation.php';
-    @include 'admin/starsidenavbar.php';
+    @include '../admin/starheader.php';
+    @include '../admin/starnavigation.php';
+    @include '../admin/starsidenavbar.php';
     ?>
    
  <!-- partial -->
  <div class="main-panel">
         <div class="content-wrapper">
           <?php
-require_once "../../includes/dbh.inc.php";
+require_once "../includes/dbh.inc.php";
 $limit_per_page=20;
 if(isset($_GET['page'])){
    $page=$_GET['page'];

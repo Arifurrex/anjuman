@@ -19,8 +19,8 @@
             <a class="nav-link" data-toggle="collapse" href="#all-pos" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="images/menu_icons/01.png" alt="menu icon"> <span class="menu-title">post</span><i class="menu-arrow"></i></a>
             <div class="collapse" id="all-pos">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/all-post.php">all post</a></li>
-                <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/add-post.php">Add post</a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/post/all-post.php">all post</a></li>
+                <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/post/add-post.php">Add post</a></li>
               </ul>
             </div>
           </li>

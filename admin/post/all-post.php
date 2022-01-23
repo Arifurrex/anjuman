@@ -6,16 +6,17 @@ if($_SESSION["role"] === 0){
 }
 ?>
  <?php
-    @include '../admin/starheader.php';
-    @include '../admin/starnavigation.php';
-    @include '../admin/starsidenavbar.php';
+  // var_dump(__DIR__);
+    include '../starheadercopy.php';
+    include '../starnavigationCopy.php';
+    include '../starsidenavbarCopy.php';
     ?>
    
- <!-- partial -->
+ <!-- partiala -->
  <div class="main-panel">
         <div class="content-wrapper">
           <?php
-require_once "../includes/dbh.inc.php";
+require_once "../../includes/dbh.inc.php";
 $limit_per_page=20;
 if(isset($_GET['page'])){
    $page=$_GET['page'];
@@ -60,9 +61,9 @@ $sqli="select * from post
                           <td><?= $row['category_name']?></td>
                           <td><?= $row['post_date']?></td>
                           <td><?= $row['username']?></td>
-                          <td><img src="../images/<?= $row['post_img']?>" alt="" style="width:50px;height:50px"></td>
-                          <td><a href="https://www.anjumanehefajoth.com/admin/edit-post.php?id=<?= $row['post_id']?>" class="btn btn-outline-success btn-sm">Edit</a></td>
-                          <td><a href="https://www.anjumanehefajoth.com/admin/delete-post.php?poid=<?= $row['post_id']?>&caid=<?= $row['category_id']?>" class="btn btn-outline-danger btn-sm">Delete</a></td>
+                          <td><img src="../../images/<?= $row['post_img']?>" alt="" style="width:50px;height:50px"></td>
+                          <td><a href="https://www.anjumanehefajoth.com/admin/edit-post.php?id=<?= $row['post_id']?>" class="btn btn-success btn-sm">Edit</a></td>
+                          <td><a href="https://www.anjumanehefajoth.com/admin/delete-post.php?poid=<?= $row['post_id']?>&caid=<?= $row['category_id']?>" class="btn btn-danger btn-sm">Delete</a></td>
                         </tr>
                         <?php
 	    }
@@ -137,6 +138,6 @@ $sqli="select * from post
   </div>
   <!-- container-scroller -->
 <?php    
-    @include '../admin/startscript.php';
+    include '../startscriptCopy.php';
 ?>
    

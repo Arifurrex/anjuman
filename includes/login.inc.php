@@ -24,7 +24,7 @@ if($_POST['login']){
                $_SESSION["username"]=$dausername;
                $_SESSION["role"]=$darole;
                $_SESSION["user_id"]=$dauser_id;
-                 header('location:../admin/all-post.php?success');
+                 header('location:../admin/post/all-post.php?success');
                  
            } else {
                 header('location:https://www.anjumanehefajoth.com/admin?error=invalidpass');

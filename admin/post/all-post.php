@@ -7,7 +7,7 @@ if($_SESSION["role"] === 0){
 ?>
  <?php
   // var_dump(__DIR__);
-    include '../starheadercopy.php';
+    include '../starheaderCopy.php';
     include '../starnavigationCopy.php';
     include '../starsidenavbarCopy.php';
     ?>

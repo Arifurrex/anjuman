@@ -6,10 +6,9 @@ if($_SESSION['role'] === 0){
 }
 ?>
 <?php
-    @include '../admin/starheaderCopy.php';
+    @include '../admin/starheader.php';
     @include '../admin/starnavigation.php';
     @include '../admin/starsidenavbar.php';
-    
     ?>
   <!-- partial -->
   <div class="main-panel">

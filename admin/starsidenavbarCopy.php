@@ -69,7 +69,7 @@
             <a class="nav-link" data-toggle="collapse" href="#all-division" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/08.png" alt="menu icon"> <span class="menu-title">Division</span><i class="menu-arrow"></i></a>
             <div class="collapse" id="all-division">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="division.php">All Division</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../division.php">All Division</a></li>
               </ul>
             </div>
           </li>

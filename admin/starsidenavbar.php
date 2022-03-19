@@ -70,7 +70,7 @@
             <div class="collapse" id="all-division">
               <ul class="nav flex-column sub-menu">
                 <!-- <li class="nav-item"> <a class="nav-link" href="division.php">All Division</a></li> -->
-                <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/division.php">All Division</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.anjumanehefajoth.com/admin/division.php">All Division2</a></li>
               </ul>
             </div>
           </li>

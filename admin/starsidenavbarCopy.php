@@ -81,8 +81,9 @@
             <a class="nav-link" data-toggle="collapse" href="#all-district" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/07.png" alt="menu icon"> <span class="menu-title">District</span><i class="menu-arrow"></i></a>
             <div class="collapse" id="all-district">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="add-district.php">Add District</a></li>
-                <li class="nav-item"> <a class="nav-link" href="alldistrict.php">All District</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../add-district.php">Add District</a></li>
+                <!-- <li class="nav-item"> <a class="nav-link" href="alldistrict.php">All District</a></li> -->
+                <li class="nav-item"> <a class="nav-link" href="../district/alldistrict.php">All District</a></li>
               </ul>
             </div>
           </li>

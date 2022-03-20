@@ -96,7 +96,7 @@
             <div class="collapse" id="all-upojella">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="add-upojella.php">Add Upojella</a></li>
-                <li class="nav-item"> <a class="nav-link" href="upojella.php">All Upojella</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../upojella/upojella.php">All Upojella</a></li>
               </ul>
             </div>
           </li>

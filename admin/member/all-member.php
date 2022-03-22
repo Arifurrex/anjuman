@@ -1,21 +1,21 @@
 <?php
 session_start();
-if($_SESSION["role"]==0){
+if($_SESSION["role"]===0){
 	header('location:http://www.anjumanehefajoth.com/admin?error=loginfirs');
 	exit();
 }
 ?>
 <?php
-    @include '../admin/starheader.php';
-    @include '../admin/starnavigation.php';
-    @include '../admin/starsidenavbar.php';
+    include '../starheaderCopy.php';
+    include '../starnavigationCopy.php';
+    include '../starsidenavbarCopy.php';
     ?>
    
  <!-- partial -->
  <div class="main-panel">
         <div class="content-wrapper">
 		<?php
-require_once "../includes/dbh.inc.php";
+require_once "../../includes/dbh.inc.php";
 $limit_per_page=10;
 if(isset($_GET['page'])){
    $page=$_GET['page'];
@@ -138,6 +138,6 @@ $resl=mysqli_query($conn,$que) or die("query failed");
   </div>
   <!-- container-scroller -->
 <?php    
-    @include '../admin/startscript.php';
+    include '../startscriptCopy.php';
 ?>
    

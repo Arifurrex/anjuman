@@ -1,14 +1,14 @@
 <?php
 session_start();
-if($_SESSION["role"]==0){
-	header('location:http://anjumanehefajoth.com/admin?error=loginfirs');
-	exit();
+if ($_SESSION['role'] === 0) {
+    header('location:../admin/index.php');
+    exit();
 }
 ?>
 <?php
-    @include '../admin/starheader.php';
-    @include '../admin/starnavigation.php';
-    @include '../admin/starsidenavbar.php';
+    include '../starheaderCopy.php';
+    include '../starnavigationCopy.php';
+    include '../starsidenavbarCopy.php';
 ?>
        <!-- partial -->
        <div class="main-panel">
@@ -26,7 +26,7 @@ if($_SESSION["role"]==0){
                 <div class="card-body">
                   <h4 class="card-title">Add member</h4>
                   <!-- ====== -->
-                  <form class="form-sample" action="../includes/add-member.inc.php" method="post" enctype="multipart/form-data" autocomplete="on">
+                  <form class="form-sample" action="../../includes/add-member.inc.php" method="post" enctype="multipart/form-data" autocomplete="on">
                     <p class="card-description">
                       Personal info
                     </p>
@@ -106,7 +106,7 @@ if($_SESSION["role"]==0){
                         <div class="form-group row">
                            <!-- district  -->
                           <?php 
-                          require_once '../includes/dbh.inc.php';
+                          require_once '../../includes/dbh.inc.php';
                           $sqli="select * from district ";
                           $resultdistrict=mysqli_query($conn,$sqli) or die('query failed');
                           ?>
@@ -231,7 +231,7 @@ if($_SESSION["role"]==0){
   </div>
   <!-- container-scroller -->
     <?php
-    @include '../admin/startscript.php';
+    include '../startscriptCopy.php';
     ?>
    <script>
 

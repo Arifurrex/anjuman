@@ -43,8 +43,8 @@
             <a class="nav-link" data-toggle="collapse" href="#all-members" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/02.png" alt="menu icon"> <span class="menu-title">Members</span><i class="menu-arrow"></i></a>
             <div class="collapse" id="all-members">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/all-member.php">All Members</a></li>
-                <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/add-members.php">Add Member</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../member/all-member.php">All Members</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../member/add-members.php">Add Member</a></li>
               </ul>
             </div>
           </li>

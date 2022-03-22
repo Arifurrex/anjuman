@@ -172,7 +172,7 @@ function emptyinput($title,$descri,$category){
                  VALUES ('$firstName','$lastName','$username','$fathername','$phone','$email','$villageid','$postofficeid','$upojellaid','$districtid','$ip','$avater','$position','$nid','$blood')";
                 // echo $sqlmem;
                 mysqli_query($conn,$sqlmem) or die('query failed.');
-                header('location:https://www.anjumanehefajoth.com/admin/all-member.php?msg=success');
+                header('location:../admin/member/all-member.php?msg=success');
     }    
     // setting 
     function emptyinputsetting($websitename,$description){

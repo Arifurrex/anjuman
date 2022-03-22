@@ -14,7 +14,6 @@ if(isset($_FILES['avater'])){
   if(in_array($file_ext,$extensions) === false){
        $errors[]="this extension file not allowed, please choose jpg or png";
   }
-
   if($imagesize > 2097152){
          $errors[]="file size must be 2mb or lower";
   }

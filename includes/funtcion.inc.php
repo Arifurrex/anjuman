@@ -210,7 +210,7 @@ function emptyinput($title,$descri,$category){
         mysqli_stmt_bind_param($stmt,"si",$district_name,$division_id);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header('location:../admin/alldistrict.php?msg=success');
+        header('location:../admin/district/alldistrict.php?msg=success');
         exit();
    }
        // upojella

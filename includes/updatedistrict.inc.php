@@ -5,6 +5,6 @@ $updivisionid=$_POST['division_id'];
 $id=$_GET['id'];
 $sqli="UPDATE `district` SET `district_name`='$updistrictname',division_id=$updivisionid  WHERE district_id = '$id' ";
 $result=mysqli_query($conn,$sqli) or mysqli_error();
-header('location:../admin/alldistrict.php?msg=update_successfull!!');
+header('location:../admin/district/alldistrict.php?msg=update_successfull!!');
 exit();
  

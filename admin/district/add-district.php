@@ -6,9 +6,9 @@ if ($_SESSION['role'] === 0) {
 }
 ?>
 <?php
-include '../starheaderCopy.php';
-include '../starnavigationCopy.php';
-include '../starsidenavbarCopy.php';
+    include '../starheaderCopy.php';
+    include '../starnavigationCopy.php';
+    include '../starsidenavbarCopy.php';
 ?>
        <!-- partial -->
        <div class="main-panel">
@@ -51,7 +51,7 @@ include '../starsidenavbarCopy.php';
                             <select class="form-control" name="division_id" id="" required>
                             <option selected value="" disabled>select division </option>
                             <?php
-                            require_once '../includes/dbh.inc.php'; 
+                            require_once '../../includes/dbh.inc.php'; 
                             $sqli="select * from division ";
                             $resultdivision=mysqli_query($conn,$sqli) or die('query failed');
                             ?>
@@ -86,6 +86,6 @@ include '../starsidenavbarCopy.php';
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-    <?php
-include '../startscriptCopy.php';
+  <?php    
+    include '../startscriptCopy.php';
 ?>

@@ -6,11 +6,10 @@ if($_SESSION["role"] === 0){
 }
 ?>
  <?php
-  // var_dump(__DIR__);
     include '../starheaderCopy.php';
     include '../starnavigationCopy.php';
     include '../starsidenavbarCopy.php';
-    ?>
+?>
    
  <!-- partiala -->
  <div class="main-panel">

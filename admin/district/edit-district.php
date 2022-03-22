@@ -6,9 +6,9 @@ if ($_SESSION['role'] === 0) {
 }
 ?>
 <?php
-@include '../admin/starheader.php';
-@include '../admin/starnavigation.php';
-@include '../admin/starsidenavbar.php';
+include '../starheaderCopy.php';
+include '../starnavigationCopy.php';
+include '../starsidenavbarCopy.php';
 ?>
        <!-- partial -->
        <div class="main-panel">
@@ -20,7 +20,7 @@ if ($_SESSION['role'] === 0) {
                 <div class="card-body">
                   <h4 class="card-title">Edit upojella form</h4>
                   <?php
-                  require_once '../includes/dbh.inc.php';
+                  require_once '../../includes/dbh.inc.php';
                  $id = $_GET['id'];
                  $sqli = "select * from district 
                          left join division
@@ -29,7 +29,7 @@ if ($_SESSION['role'] === 0) {
                  $result = mysqli_query($conn, $sqli) or die('query failed');
                  $row = mysqli_fetch_assoc($result);
                  ?>
-                  <form action="../includes/updatedistrict.inc.php?id=<?=$id?>" method="post"  enctype="multipart/form-data" class="forms-sample">
+                  <form action="../../includes/updatedistrict.inc.php?id=<?=$id?>" method="post"  enctype="multipart/form-data" class="forms-sample">
                     <?php
                      if (isset($_GET['msg'])) {
                      echo '<div class="alert">';
@@ -96,5 +96,5 @@ if ($_SESSION['role'] === 0) {
   </div>
   <!-- container-scroller -->
     <?php
-@include '../admin/startscript.php';
+include '../startscriptCopy.php';
 ?>

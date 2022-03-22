@@ -6,9 +6,9 @@ if($_SESSION['role'] === 0){
 }
 ?>
 <?php
-    @include '../admin/starheader.php';
-    @include '../admin/starnavigation.php';
-    @include '../admin/starsidenavbar.php';
+    include '../starheaderCopy.php';
+    include '../starnavigationCopy.php';
+    include '../starsidenavbarCopy.php';
     ?>
   <!-- partial -->
   <div class="main-panel">
@@ -19,7 +19,7 @@ if($_SESSION['role'] === 0){
                 <div class="card-body">
                   <h4 class="card-title">All Village</h4>
                   <?php
-                  require_once '../includes/dbh.inc.php';
+                  require_once '../../includes/dbh.inc.php';
                   $limi=10;
                   if(isset($_GET['id'])){
                   $page=$_GET['id'];
@@ -78,6 +78,6 @@ if($_SESSION['role'] === 0){
   <!-- container-scroller --> 
  
 <?php    
-    @include '../admin/startscript.php';
+    include '../startscriptCopy.php';
 ?>
    

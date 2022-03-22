@@ -122,8 +122,8 @@
             <a class="nav-link" data-toggle="collapse" href="#all-village" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/01.png" alt="menu icon"> <span class="menu-title">Village</span><i class="menu-arrow"></i></a>
             <div class="collapse" id="all-village">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="add-village.php">Add Village</a></li>
-                <li class="nav-item"> <a class="nav-link" href="village.php">All Village</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../village/add-village.php">Add Village</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../village/village.php">All Village</a></li>
               </ul>
             </div>
           </li>

@@ -6,9 +6,9 @@ if($_SESSION['role'] === 0){
 }
 ?>
 <?php
-    @include '../admin/starheader.php';
-    @include '../admin/starnavigation.php';
-    @include '../admin/starsidenavbar.php';
+    include '../starheaderCopy.php';
+    include '../starnavigationCopy.php';
+    include '../starsidenavbarCopy.php';
  ?>
        <!-- partial -->
        <div class="main-panel">
@@ -19,7 +19,7 @@ if($_SESSION['role'] === 0){
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Add Village form</h4>
-                  <form action="../includes/add-village.inc.php" method="post"  enctype="multipart/form-data" 
+                  <form action="../../includes/add-village.inc.php" method="post"  enctype="multipart/form-data" 
                   class="forms-sample">
                     <?php
                    if(isset($_GET['msg'])){
@@ -70,6 +70,6 @@ if($_SESSION['role'] === 0){
   </div>
   <!-- container-scroller -->
     <?php
-    @include '../admin/startscript.php';
+    include '../startscriptCopy.php';
     ?>
    

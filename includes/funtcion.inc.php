@@ -273,13 +273,13 @@ function insertvillage($village_name,$conn){
  $queryvillage="INSERT INTO `village`(`village_name`) VALUES (?)";
  $stmt=mysqli_stmt_init($conn);
  if(!mysqli_stmt_prepare($stmt,$queryvillage)){
-    header('location:../admin/village.php?msg=stmt_failed');
+    header('location:../admin/village/village.php?msg=stmt_failed');
     exit(); 
  }
  mysqli_stmt_bind_param($stmt,"s",$village_name);
  mysqli_stmt_execute($stmt);
  mysqli_stmt_close($stmt);
- header('location:../admin/village.php?msg=success');
+ header('location:../admin/village/village.php?msg=success');
  exit();
  
 }

@@ -1,8 +1,6 @@
 <?php
 if($_POST['login']){
-    die("done");
     require_once 'dbh.inc.php';
-    die("done");
     $username=mysqli_real_escape_string($conn,$_POST['username']);
     $pasi=mysqli_real_escape_string($conn,$_POST['password']);
     

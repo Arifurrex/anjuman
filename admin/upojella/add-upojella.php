@@ -20,7 +20,7 @@ include '../starsidenavbarCopy.php';
                 <div class="card-body">
                   <h4 class="card-title">Add upojella form</h4>
                  
-                  <form action="../includes/add-upojella.inc.php" method="post"  enctype="multipart/form-data" class="forms-sample">
+                  <form action="../../includes/add-upojella.inc.php" method="post"  enctype="multipart/form-data" class="forms-sample">
                     <?php
                      if (isset($_GET['msg'])) {
                      echo '<div class="alert">';
@@ -50,7 +50,7 @@ include '../starsidenavbarCopy.php';
                           <div class="col-sm-12">
                             <select class="form-control" name="district_id" id="" required>
                             <?php
-                            require_once '../includes/dbh.inc.php'; 
+                            require_once '../../includes/dbh.inc.php'; 
                             $sqli="select * from district ";
                             $resultdistrict=mysqli_query($conn,$sqli) or die('query failed');
                             ?>

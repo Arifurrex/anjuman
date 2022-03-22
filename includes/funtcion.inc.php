@@ -233,7 +233,7 @@ function emptyinput($title,$descri,$category){
         mysqli_stmt_bind_param($stmt,"si",$upojella_name,$district_id);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header('location:../admin/upojella.php?msg=success');
+        header('location:../admin/upojella/upojella.php?msg=success');
         exit();
    }
    

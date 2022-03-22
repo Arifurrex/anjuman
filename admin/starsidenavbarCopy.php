@@ -95,7 +95,7 @@
             <a class="nav-link" data-toggle="collapse" href="#all-upojella" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/07.png" alt="menu icon"> <span class="menu-title">Upojella</span><i class="menu-arrow"></i></a>
             <div class="collapse" id="all-upojella">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../add-upojella.php">Add Upojella</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../upojella/add-upojella.php">Add Upojella</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../upojella/upojella.php">All Upojella</a></li>
               </ul>
             </div>

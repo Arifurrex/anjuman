@@ -256,7 +256,7 @@ function emptyinput($title,$descri,$category){
      mysqli_stmt_bind_param($stmt,"si",$postoffice_name,$upojella_id);
      mysqli_stmt_execute($stmt);
      mysqli_stmt_close($stmt);
-     header('location:../admin/postoffice.php?msg=success');
+     header('location:../admin/union/postoffice.php?msg=success');
      exit();
 }
  // postoffice

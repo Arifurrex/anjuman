@@ -6,18 +6,9 @@ if ($_SESSION['role'] === 0) {
 }
 ?>
 <?php
-@include '../admin/starheader.php';
-@include '../admin/starnavigation.php';
-@include '../admin/starsidenavbar.php';
-?>
-<?php
-require_once '../includes/dbh.inc.php';
-$id = $_GET['id'];
-$sqli = "select * from postoffice 
-left join upojella on postoffice.upojella_id=upojella.upojella_id
-where postoffice_id='$id'";
-$result = mysqli_query($conn, $sqli) or die('query failed');
-$row = mysqli_fetch_assoc($result);
+include '../starheaderCopy.php';
+include '../starnavigationCopy.php';
+include '../starsidenavbarCopy.php';
 ?>
        <!-- partial -->
        <div class="main-panel">
@@ -27,9 +18,9 @@ $row = mysqli_fetch_assoc($result);
             <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">edit union form</h4>
+                  <h4 class="card-title">Add union form</h4>
                  
-                  <form action="../includes/updatepostoffice.inc.php?id=<?=$row['postoffice_id']?>" method="post"  enctype="multipart/form-data" class="forms-sample">
+                  <form action="../../includes/add-postoffice.inc.php" method="post"  enctype="multipart/form-data" class="forms-sample">
                     <?php
                      if (isset($_GET['msg'])) {
                      echo '<div class="alert">';
@@ -50,7 +41,7 @@ $row = mysqli_fetch_assoc($result);
                     ?>
                     <div class="form-group">
                       <label for="exampleInputName1">Union Name</label>
-                      <input type="text" class="form-control" id="exampleInputName1" placeholder="postoffice_name" name="postoffice_name" value="<?=$row['postoffice_name']?>"/>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="union_name" name="postoffice_name"/>
                     </div> 
                     <!-- ===================== -->
                     
@@ -58,15 +49,15 @@ $row = mysqli_fetch_assoc($result);
                           <label class="col-sm-12 col-form-label">upojella name</label>
                           <div class="col-sm-12">
                             <select class="form-control" name="upojella_id" id="" required>
-                            <option selected value="<?=$row['upojella_id']?>" ><?=$row['upojella_name']?></option>
-                            <?php
-                             $sqli="select * from upojella";
+                            <option selected value="" disabled>select upojella </option>
+                            <?php 
+                            require_once '../../includes/dbh.inc.php'; 
+                            $sqli="select * from upojella ";
                              $resultupojella=mysqli_query($conn,$sqli) or die('query failed');
-
                             ?>
-                            <?php while($rowup=mysqli_fetch_assoc($resultupojella)){?>
-                            <option value="<?=$rowup['upojella_id']?>" ><?=$rowup['upojella_name']?></option>
-                            <?php }?>
+                            <?php while($row4=mysqli_fetch_assoc($resultupojella)){?>
+                            <option value="<?=$row4['upojella_id']?>"><?=$row4['upojella_name']?></option>
+                             <?php }?>
                             </select>
                           </div>
                         </div>
@@ -96,5 +87,5 @@ $row = mysqli_fetch_assoc($result);
   </div>
   <!-- container-scroller -->
     <?php
-@include '../admin/startscript.php';
+include '../startscriptCopy.php';
 ?>

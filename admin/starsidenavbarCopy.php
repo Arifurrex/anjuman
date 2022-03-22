@@ -110,8 +110,8 @@
             </a>
             <div class="collapse" id="all-union">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="add-postoffice.php">Add Union</a></li>
-                <li class="nav-item"> <a class="nav-link" href="postoffice.php">All Union</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../union/add-postoffice.php">Add Union</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../union/postoffice.php">All Union</a></li>
               </ul>
             </div>
           </li>

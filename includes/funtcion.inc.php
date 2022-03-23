@@ -167,12 +167,12 @@ function emptyinput($title,$descri,$category){
     //     }
     //     return $result;
     //     }
-        function createmember($conn,$firstName,$lastName,$username,$fathername,$phone,$email,$villageid,$postofficeid,$upojellaid,$districtid,$ip,$avater,$position,$nid,$blood){
-                $sqlmem="INSERT INTO `members`(`first_name`, `last_name`, `username`, `father_name`, `phone`, `email`, `village_id`, `post_office_id`, `upojella`, `district_id`, `ip_address`, `avater`,`position`, `nid`,`blood_group_id`)
-                 VALUES ('$firstName','$lastName','$username','$fathername','$phone','$email','$villageid','$postofficeid','$upojellaid','$districtid','$ip','$avater','$position','$nid','$blood')";
+        function createmember($conn,$firstName,$lastName,$username,$fathername,$phone,$email,$villageid,$postofficeid,$upojellaid,$districtid,$divisionid,$ip,$avater,$position,$nid,$blood){
+                $sqlmem="INSERT INTO `members`(`first_name`, `last_name`, `username`, `father_name`, `phone`, `email`, `village_id`, `post_office_id`, `upojella`, `district_id`,`division_id`,`ip_address`, `avater`,`position`, `nid`,`blood_group_id`)
+                 VALUES ('$firstName','$lastName','$username','$fathername','$phone','$email','$villageid','$postofficeid','$upojellaid','$districtid','$divisionid','$ip','$avater','$position','$nid','$blood')";
                 // echo $sqlmem;
                 mysqli_query($conn,$sqlmem) or die('query failed.');
-                header('location:https://www.anjumanehefajoth.com/admin/all-member.php?msg=success');
+                header('location:../admin/member/all-member.php?msg=success');
     }    
     // setting 
     function emptyinputsetting($websitename,$description){

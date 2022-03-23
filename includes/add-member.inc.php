@@ -12,9 +12,8 @@ if(isset($_FILES['avater'])){
   $file_ext=end($fi_ext);
   $extensions=array("jpeg","jpg","png");
   if(in_array($file_ext,$extensions) === false){
-       $errors[]="this extension file not allowed, please choose jpg or png";
+       $errors[]="this extension file not allowed, please choose jpg,jpeg or png";
   }
-
   if($imagesize > 2097152){
          $errors[]="file size must be 2mb or lower";
   }
@@ -36,6 +35,7 @@ if(isset($_POST['submit'])){
   $postofficeid=mysqli_real_escape_string($conn,$_POST['postoffice_id']);
   $upojellaid=mysqli_real_escape_string($conn,$_POST['upojella_id']);
   $districtid=mysqli_real_escape_string($conn,$_POST['district_id']);
+  $divisionid=mysqli_real_escape_string($conn,$_POST['id']);
   $ip=$_SERVER['REMOTE_ADDR'];
   $avater=$imagename;
   $position=mysqli_real_escape_string($conn,$_POST['position']);
@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
   //   exit();
   // }
  
-  createmember($conn,$firstName,$lastName,$username,$fathername,$phone,$email,$villageid,$postofficeid,$upojellaid,$districtid,$ip,$avater,$position,$nid,$blood);
+  createmember($conn,$firstName,$lastName,$username,$fathername,$phone,$email,$villageid,$postofficeid,$upojellaid,$districtid,$divisionid,$ip,$avater,$position,$nid,$blood);
 
 }else{
     header('../admin/add-user.php');

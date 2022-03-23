@@ -17,7 +17,7 @@
 <body>
   <div class="container">
     <section class="header">
-      <div class="logo">anjuman</div>
+      <div class="logo">আঞ্জুমানে হেফাজতে ইসলাম</div>
       <div class="hamburger">
         <i class="fas fa-bars"></i>
       </div>

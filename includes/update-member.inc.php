@@ -54,5 +54,5 @@ if(isset($_POST['submit'])){
   
 
   mysqli_query($conn,$sqllupmember) or die("query failed");
-  header('location:http://anjumanehefajoth.com/admin/all-member.php?msg=updamembers');                                
+  header('location:../admin/member/all-member.php?msg=updasuccess!!');                                
 }

@@ -104,7 +104,27 @@ if ($_SESSION['role'] === 0) {
                     <div class="row">
                     <div class="col-md-6">
                         <div class="form-group row">
-                           <!-- district  -->
+                           <!-- division  -->
+                          <?php 
+                          require_once '../../includes/dbh.inc.php';
+                          $sqlidiv="select * from division ";
+                          $resultdivision=mysqli_query($conn,$sqlidiv) or die('query failed');
+                          ?>
+                          <label class="col-sm-3 col-form-label">Division</label>
+                          <div class="col-sm-9">
+                            <select class="form-control" name="id" id="division">
+                            <option selected value="" disabled>select division </option>
+                            <?php while($row8=mysqli_fetch_assoc($resultdivision)){?>
+                              <option value="<?=$row8['id']?>"><?=$row8['division_name']?></option>
+                              <?php }?>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <!-- district  -->
+                    <div class="col-md-6">
+                        <div class="form-group row">
                           <?php 
                           require_once '../../includes/dbh.inc.php';
                           $sqli="select * from district ";
@@ -115,18 +135,26 @@ if ($_SESSION['role'] === 0) {
                             <select class="form-control" name="district_id" id="district">
                             <option selected value="" disabled>select district </option>
                             <?php while($row4=mysqli_fetch_assoc($resultdistrict)){?>
-                              <option value="<?=$row4['id']?>"><?=$row4['district_name']?></option>
+                              <option value="<?=$row4['district_id']?>"><?=$row4['district_name']?></option>
                               <?php }?>
                             </select>
                           </div>
                         </div>
                       </div>
+                      <!-- upojella  -->
                       <div class="col-md-6">
                         <div class="form-group row">
+                        <?php
+                        $sqlupo="select * from upojella ";
+                          $resultupojella=mysqli_query($conn,$sqlupo) or die('query failed');
+                          ?>
                           <label class="col-sm-3 col-form-label">Upojella</label>
                           <div class="col-sm-9">
                             <select class="form-control" name="upojella_id" id="upojella" > 
                             <option selected  disabled>select sub-district </option>
+                            <?php while($row5=mysqli_fetch_assoc($resultupojella)){?>
+                              <option value="<?=$row5['upojella_id']?>"><?=$row5['upojella_name']?></option>
+                              <?php }?>
                             </select>
                           </div>
                         </div>
@@ -134,16 +162,25 @@ if ($_SESSION['role'] === 0) {
                     
                     </div>
                     <div class="row">
+                      <!-- union/postoffice  -->
                       <div class="col-md-6">
                         <div class="form-group row">
+                        <?php
+                        $sqlpostoffice="select * from postoffice";
+                          $resultpostoffice=mysqli_query($conn,$sqlpostoffice) or die('query failed');
+                          ?>
                           <label class="col-sm-3 col-form-label">Union</label>
                           <div class="col-sm-9">
                             <select class="form-control"  name="postoffice_id" id="postoffice" > 
                             <option selected value="" disabled>select union </option>
+                            <?php while($row6=mysqli_fetch_assoc($resultpostoffice)){?>
+                              <option value="<?=$row6['postoffice_id']?>"><?=$row6['postoffice_name']?></option>
+                              <?php }?>
                             </select>
                           </div>
                         </div>
                       </div>
+                      <!-- village  -->
                     <div class="col-md-6">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Village</label>

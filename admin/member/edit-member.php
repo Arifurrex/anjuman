@@ -6,10 +6,10 @@ if($_SESSION["role"]==0){
 }
 ?>
 <?php
-   require_once "../includes/dbh.inc.php";
+   require_once "../../includes/dbh.inc.php";
    $id=$_GET['id'];
    $que="SELECT * FROM members 
-   left join district on members.district_id=district.id
+   left join district on members.district_id=district.district_id
    left join upojella on members.upojella=upojella.upojella_id
    left join postoffice on members.post_office_id=postoffice.postoffice_id
    left join village on members.village_id=village.village_id
@@ -19,9 +19,9 @@ if($_SESSION["role"]==0){
    $row=mysqli_fetch_assoc($resl);
 ?>  
 <?php
-    @include '../admin/starheader.php';
-    @include '../admin/starnavigation.php';
-    @include '../admin/starsidenavbar.php';
+    include '../starheaderCopy.php';
+    include '../starnavigationCopy.php';
+    include '../starsidenavbarCopy.php';
  ?>
        <!-- partial -->
        <div class="main-panel">
@@ -39,7 +39,7 @@ if($_SESSION["role"]==0){
                 <div class="card-body">
                   <h4 class="card-title">Edit member</h4>
                   <!-- ====== -->
-                  <form class="form-sample"  action="../includes/update-member.inc.php?id=<?= $row['member_id'] ?>" method="post" enctype="multipart/form-data" autocomplete="on">
+                  <form class="form-sample"  action="../../includes/update-member.inc.php?id=<?= $row['member_id'] ?>" method="post" enctype="multipart/form-data" autocomplete="on">
                    
                     <div class="row">
                       <div class="col-md-6">
@@ -121,6 +121,12 @@ if($_SESSION["role"]==0){
                             <select class="form-control" name="upojella_id" id="upojella" > 
                             <option selected value="<?=$row['upojella_id']?>"><?=$row['upojella_name']?> </option>
                             <!-- <option selected  disabled>select sub-district </option> -->
+                            <?php 
+                          $sqlupojella="SELECT * FROM upojella";
+                          $qeryupojella=mysqli_query($conn,$sqlupojella);
+                          while($rowupojella=mysqli_fetch_assoc($qeryupojella)){ ?>
+                          <option  value="<?=$rowupojella['id']?>"><?=$rowupojella['upojella_name']?></option>
+                          <?php } ?>
                             </select>
                           </div>
                         </div>
@@ -270,7 +276,7 @@ if($_SESSION["role"]==0){
   </div>
   <!-- container-scroller -->
     <?php
-    @include '../admin/startscript.php';
+    include '../startscriptCopy.php';
     ?>
    <script>
 

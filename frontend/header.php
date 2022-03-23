@@ -57,7 +57,7 @@
             <div>
               <h1 class="dropdown-heading">কমিটি</h1>
               <div class="dropdown-links">
-                <a href="#" class="link">কেন্দ্রীয় কমিটি</a>
+                <a href="#centralCommette" class="link">কেন্দ্রীয় কমিটি</a>
               </div>
             </div>
           </div>

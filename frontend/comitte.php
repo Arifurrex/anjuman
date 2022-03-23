@@ -1,4 +1,4 @@
-<div class="container comitte">
+<div class="container comitte" id="centralCommette">
     <h1>কেন্দ্রীয় কমিটি</h1>
     <div class="row">
         <div class="card">

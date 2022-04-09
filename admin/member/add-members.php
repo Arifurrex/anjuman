@@ -27,31 +27,37 @@ if ($_SESSION['role'] === 0) {
                   <h4 class="card-title">Add member</h4>
                   <!-- ====== -->
                   <form class="form-sample" action="../../includes/add-member.inc.php" method="post" enctype="multipart/form-data" autocomplete="on">
-                    <p class="card-description">
+                    <!-- <p class="card-description">
                       Personal info
-                    </p>
+                    </p> -->
                     <?php
                    if(isset($_GET['msg'])){
                     echo'<div class="alert">';
                    if($_GET['msg'] =='emptyinpute'){
                    echo"please fill all input"; 
                    }else if($_GET['msg']=='invalidfirstname'){
-                   echo"please fill valid firstname";
+                   echo"please fill valid first name";
                    }else if($_GET['msg']=='invalidlastName'){
                    echo"please fill valid lastName";
-                  }else if($_GET['msg']=='usernametaken'){
-                   echo"username is taken";
-                  }
-              echo'<span class="closebtn" id="closebtn"onclick="this.parentElement.style.display='.'none'.';" >&times;</span>
+                   }else if($_GET['msg']=='invalidfathername'){
+                    echo"please fill valid Father Name";
+                   }else if($_GET['msg']=='invalidphone'){
+                   echo"phone number should be 11 digit and and only number";
+                  }else if($_GET['msg']=='invalidemail'){
+                    echo"invaild email !! please input email correctly";
+                   }
+              echo'<span class="closebtn" id="closebtn" onclick="this.parentElement.style.display='.'none'.';" >&times;</span>
               </div>';
                  }
               ?>
+              
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">First Name</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="frist-name" name="first_name"/>
+                            <input type="text" class="form-control" placeholder="frist-name" name="first_name" autocomplete="off" required
+                            value="<?php echo isset($_POST["first_name"]) ? $_POST["first_name"] : ''; ?>"/>
                           </div>
                         </div>
                       </div>
@@ -59,7 +65,7 @@ if ($_SESSION['role'] === 0) {
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Last Name</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="last-name"  name="last_name"/>
+                            <input type="text" class="form-control" placeholder="last-name"  name="last_name" autocomplete="off" required/>
                           </div>
                         </div>
                       </div>
@@ -67,7 +73,7 @@ if ($_SESSION['role'] === 0) {
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">father_name</label>
+                          <label class="col-sm-3 col-form-label">Father's name</label>
                           <div class="col-sm-9">
                             <input type="text" class="form-control" placeholder="father name"  name="father_name"/>
                           </div>
@@ -77,7 +83,7 @@ if ($_SESSION['role'] === 0) {
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Phone</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="phone"  name="phone"/>
+                            <input type="text" class="form-control" placeholder="phone"  name="phone" autocomplete="off" required value="<?php echo isset($_POST['phone']) ? $_POST['phone'] : ''; ?>"/>
                           </div>
                         </div>
                       </div>
@@ -256,8 +262,8 @@ if ($_SESSION['role'] === 0) {
         <!-- partial:../../partials/_footer.html -->
         <footer class="footer">
           <div class="container-fluid clearfix">
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2021 <a href="" target="_blank">alinessa</a>. All rights reserved.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © <?php echo date("Y")?> <a href="" target="_blank">alinessa it solution</a> <i class="mdi mdi-heart text-danger"></i>. All rights reserved.</span>
+            <!-- <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span> -->
           </div>
         </footer>
         <!-- partial -->

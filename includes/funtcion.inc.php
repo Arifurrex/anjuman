@@ -158,22 +158,80 @@ function emptyinput($title,$descri,$category){
         }
     //   edi caegory 
 
-    // member
-    // function emptyInputaddmember($firstName,$lastName,$fathername,$phone,$villageid,$postofficeid,$upojellaid,$districtid,$position){
-    //     if(empty($lastName) || empty($firstName) || empty($fathername) || empty($phone) || empty($villageid) || empty($postofficeid) || empty($upojellaid) || empty($districtid) || empty($position)){
-    //        $result=true;
-    //     }else{
-    //         $result=false;
-    //     }
-    //     return $result;
-    //     }
+
+// ==========================================
+    // member function
+// ==========================================    
+    // member validation function
+    function emptyInputaddmember($firstName,$lastName,$fathername,$phone,$villageid,$postofficeid,$upojellaid,$districtid,$divisionid,$position){
+        if(empty($lastName) || empty($firstName) || empty($fathername) || empty($phone) || empty($villageid) || empty($postofficeid) || empty($upojellaid) || 
+           empty($districtid) || empty($divisionid) ||empty($position)){
+           $result=true;
+        }else{
+            $result=false;
+        }
+        return $result;
+        }
+    function invalidmfirstname($firstName){
+        $pattern='/^[a-zA-Z0-9]*$/';
+        if(!preg_match($pattern,$firstName)){
+            $result=true;
+        }else{
+            $result=false;
+        }
+        return $result;
+    } 
+
+    function invalidmlastName($lastName){
+        $pattern='/^[a-zA-Z0-9]*$/';
+        if(!preg_match($pattern,$lastName)){
+          $result=true;
+        }else{
+            $result=false;
+        }
+       return $result;
+    }
+    
+    function invalidmfathername($fathername){
+        $pattern='/^[a-zA-Z0-9]*$/';
+        if(!preg_match($pattern,$fathername)){
+          $result=true;
+        }else{
+            $result=false;
+        }
+       return $result;
+    }
+
+    function invalidphone($phone){
+        $pattern='/^[0-9]{11}+$/';
+        if(!preg_match($pattern,$phone)){
+          $result=true;
+        }else{
+            $result=false;
+        }
+       return $result;
+    }
+
+    function invalidemail($email){
+        $pattern='/^[a-z]+[_]+[0-9]+(@).[a-z]+(.com)$/';
+        if(!preg_match($pattern,$email)){
+          $result=true;
+        }else{
+            $result=false;
+        }
+       return $result;
+    }
+   
+        // member create function 
         function createmember($conn,$firstName,$lastName,$username,$fathername,$phone,$email,$villageid,$postofficeid,$upojellaid,$districtid,$divisionid,$ip,$avater,$position,$nid,$blood){
                 $sqlmem="INSERT INTO `members`(`first_name`, `last_name`, `username`, `father_name`, `phone`, `email`, `village_id`, `post_office_id`, `upojella`, `district_id`,`division_id`,`ip_address`, `avater`,`position`, `nid`,`blood_group_id`)
                  VALUES ('$firstName','$lastName','$username','$fathername','$phone','$email','$villageid','$postofficeid','$upojellaid','$districtid','$divisionid','$ip','$avater','$position','$nid','$blood')";
                 // echo $sqlmem;
                 mysqli_query($conn,$sqlmem) or die('query failed.');
                 header('location:../admin/member/all-member.php?msg=success');
-    }    
+    } 
+    
+    
     // setting 
     function emptyinputsetting($websitename,$description){
         if(empty($websitename)||empty($description)){

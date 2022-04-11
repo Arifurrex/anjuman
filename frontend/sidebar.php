@@ -11,7 +11,7 @@
             </div>
             <!-- recent post start from here  -->
  <?php
-require_once 'includes/dbh.inc.php';
+require_once '../includes/dbh.inc.php';
 $sqlre="select * from post 
          left join category on post.category=category.category_id
          left join user on post.author=user.user_id 
@@ -26,7 +26,7 @@ $sqlre="select * from post
                     ?>
                   <div class="rpos">
                 <div class="rpos__lefside">
-                    <img src="images/<?=$ro['post_img']?> " alt="" class="rpos__image">
+                    <img src="../images/<?=$ro['post_img']?> " alt="" class="rpos__image">
                 </div>
                 <div class="rpos__righside">
                     

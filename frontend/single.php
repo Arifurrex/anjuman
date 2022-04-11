@@ -1,5 +1,5 @@
 <?php include 'header.php'; 
-include 'includes/dbh.inc.php';
+include '../includes/dbh.inc.php';
 $id=$_GET['id'];
    $sql="select * from post 
    left join category on post.category=category.category_id
@@ -8,7 +8,7 @@ $id=$_GET['id'];
    $resl=mysqli_query($conn,$sql) or die('quer failed'); 
    
 ?>
-<section class="news">
+<section class="news container">
      <div class="title">
      <h3>সংবাদ</h3>
     <p class="subtitle">সত্য ও সুন্দরের পথে </p>
@@ -29,7 +29,7 @@ $id=$_GET['id'];
                 
             </div>
             <div class="single-pos__righside">
-            <img src="images/<?=$row['post_img']?>" alt="" class="pos__image">
+            <img src="../images/<?=$row['post_img']?>" alt="" class="pos__image">
                 <div class="pos__paragraph paragraph">
                     <p><?= $row['description']?></p>
                 </div>

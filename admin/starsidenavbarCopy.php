@@ -57,8 +57,8 @@ committee Members</span><i class="menu-arrow"></i></a>
             <a class="nav-link" data-toggle="collapse" href="#all-users" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/08.png" alt="menu icon"> <span class="menu-title">Users</span><i class="menu-arrow"></i></a>
             <div class="collapse" id="all-users">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/all-users.php">all users</a></li>
-                <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/add-user.php">Add user</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../all-users.php">all users</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../add-user.php">Add user</a></li>
               </ul>
             </div>
           </li>

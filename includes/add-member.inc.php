@@ -1,4 +1,5 @@
 <?php 
+
 require_once "dbh.inc.php";
 require_once "funtcion.inc.php";
 if(isset($_FILES['avater'])){
@@ -10,7 +11,7 @@ if(isset($_FILES['avater'])){
   $imagesize=$_FILES['avater']['size'];
   $fi_ext=explode('.',$imagename);
   $file_ext=end($fi_ext);
-  $extensions=array("jpeg","jpg","png");
+  $extensions=array("jpeg","jpg","png","PNG","JPEG","JPG");
   if(in_array($file_ext,$extensions) === false){
        $errors[]="this extension file not allowed, please choose jpg,jpeg or png";
   }
@@ -24,7 +25,7 @@ if(isset($_FILES['avater'])){
       print_r($errors);
       die();
  }
-if(isset($_POST['submit'])){
+ if(isset($_POST['submit'])){
   $firstName=mysqli_real_escape_string($conn,$_POST['first_name']);
   $lastName=mysqli_real_escape_string($conn,$_POST['last_name']);
   $username=$firstName." ".$lastName;
@@ -43,21 +44,32 @@ if(isset($_POST['submit'])){
   $blood=mysqli_real_escape_string($conn,$_POST['blood_group_id']);
   
   
-  // if (emptyInputaddmember($firstName,$lastName,$fathername,$phone,$villageid,$postofficeid,$upojellaid,$districtid,$position) !== false){
-  //   header('location:../admin/add-user.php?msg=emptyinpute');
-  //   exit();
-  // }
+  if (emptyInputaddmember($firstName,$lastName,$fathername,$phone,$villageid,$postofficeid,$upojellaid,$districtid,$divisionid,$position) !== false){
+    header('location:../admin/member/add-members.php?msg=emptyinpute');
+    exit();
+  }
   // ====
-  // if(invalidfirstname($firstName) !== false){
-  //   header('location:../admin/add-user.php?msg=invalidfirstname');
-  //   exit();
-  // }
+  if(invalidmfirstname($firstName) !== false){
+    header('location:../admin/member/add-members.php?msg=invalidfirstname');
+    exit();
+  }
  
-  // if(invalidlastName($lastName) !== false){
-  //   header('location:../admin/add-user.php?msg=invalidlastName');
-  //   exit();
-  // }
- 
+  if(invalidmlastName($lastName) !== false){
+    header('location:../admin/member/add-members.php?msg=invalidlastName');
+    exit();
+  }
+  if(invalidmfathername($fathername) !== false){
+    header('location:../admin/member/add-members.php?msg=invalidfathername');
+    exit();
+  }
+  if(invalidphone($phone) !== false){
+    header('location:../admin/member/add-members.php?msg=invalidphone');
+    exit();
+  }
+  if(invalidphone($email) !== false){
+    header('location:../admin/member/add-members.php?msg=invalidemail');
+    exit();
+  }
   createmember($conn,$firstName,$lastName,$username,$fathername,$phone,$email,$villageid,$postofficeid,$upojellaid,$districtid,$divisionid,$ip,$avater,$position,$nid,$blood);
 
 }else{

@@ -20,7 +20,7 @@
 
       <div class="footer-nav">
         <a href="/index.html" class="logo-image">
-          <img src="images/Only Logo.bmp" alt="logo-light" />
+          <img src="../images/Only Logo.bmp" alt="logo-light" />
         </a>
         <ul class="footer-nav-list">
           <li class="footer-nav-list-item">

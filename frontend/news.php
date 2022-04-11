@@ -36,7 +36,7 @@ limit $offset,$limit";
                     <img src="images/<?=$row['post_img']?>" alt="" class="pos__image">
                 </div>
                 <div class="pos__righside">
-                    <h4 class="pos__title"><a href="http://anjumanehefajoth.com/single.php?id=<?=$row['post_id']?>"> <?=$row['title']?></a></h4>
+                    <h4 class="pos__title"><a href="frontend/single.php?id=<?=$row['post_id']?>"> <?=$row['title']?></a></h4>
                     <div class="tagline "> 
                         <div class="category"><a href="http://anjumanehefajoth.com/category.php?catid=<?=$row['category']?>"><i class="fas fa-tags"></i><?=$row['category_name']?></a></div>
                         <div class="author"><a href="http://anjumanehefajoth.com/author.php?author=<?=$row['author']?>"><i class="fa fa-user" aria-hidden="true"></i><?=$row['username']?></a></div>

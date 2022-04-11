@@ -22,7 +22,7 @@ if($_SESSION['role'] == 0){
                   <p class="card-description">
                     add user here 
                   </p>
-                  <form action="https://www.anjumanehefajoth.com/includes/add-user.inc.php" method="post"  enctype="multipart/form-data" class="forms-sample">
+                  <form action="../includes/add-user.inc.php" method="post"  enctype="multipart/form-data" class="forms-sample">
                     <?php
                    if(isset($_GET['msg'])){
                    echo'<div class="alert">';

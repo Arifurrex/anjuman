@@ -9,32 +9,22 @@ if(file_exists('includes/dbh.inc.php')){
     }
     $offset = ($page - 1) * $limit;
     $sql = "select * from post 
-left join category on post.category=category.category_id
-left join user on post.author=user.user_id 
-order by post_id desc
-limit $offset,$limit";
+    left join category on post.category=category.category_id
+    left join user on post.author=user.user_id 
+    order by post_id desc
+    limit $offset,$limit";
     $resl = mysqli_query($conn, $sql) or die('quer failed'); 
 }else{
     echo "file not found";
 } 
 
 ?>
-<div class="container">
-
+<!-- <div class="container"> -->
   <section class="news">
-      <div class="title">
-          <h1>সংবাদ</h1>
-          <p class="subtitle">সত্য ও সুন্দরের পথে </p>
-        </div>
-    <main>
-        <div class="lefside" style="--delay: 1s">
-            <!-- == -->
+        <div class="leftside">
             <?php
             while($row=mysqli_fetch_assoc($resl)){ ?>
              <div class="pos">
-                <div class="pos__lefside">
-                    <img src="images/<?=$row['post_img']?>" alt="" class="pos__image">
-                </div>
                 <div class="pos__righside">
                     <h4 class="pos__title"><a href="frontend/single.php?id=<?=$row['post_id']?>"> <?=$row['title']?></a></h4>
                     <div class="tagline "> 
@@ -42,15 +32,14 @@ limit $offset,$limit";
                         <div class="author"><a href="http://anjumanehefajoth.com/author.php?author=<?=$row['author']?>"><i class="fa fa-user" aria-hidden="true"></i><?=$row['username']?></a></div>
                         <div class="date"><i class="fa fa-calendar" aria-hidden="true"></i><?=$row['post_date']?></div>
                     </div>
-                    <div class="pos__paragraph paragraph"><?=substr($row['description'],0,950)."...";?></div>
+                    <div class="pos__paragraph paragraph"><?=substr($row['description'],0,550)."...";?></div>
                 </div>
-            </div>
+             </div>
  
             <?php      
               }
             ?>
-            <!-- == -->
-            <div class="paginatinon">
+            <!-- <div class="paginatinon">
             <?php
             $sqlll="select * from post";
             $re=mysqli_query($conn,$sqlll) or die('query failed');
@@ -71,14 +60,12 @@ limit $offset,$limit";
                 echo'<a href="https://www.anjumanehefajoth.com/index?page='.$i.'"><div class=" btn btn1 p1 '.$active.'">'.$i.'</div></a>'; 
             }
             ?>   
-             </div>
+             </div> -->
              
         </div>
         <!-- ====================================== -->
         <?php
         // include 'sidebar.php';
         ?>
-
-    </main>
     </section>
-</div>
+<!-- </div> -->

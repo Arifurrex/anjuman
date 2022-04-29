@@ -1,7 +1,7 @@
 <?php
-    @include '../admin/starheader.php';
-    @include '../admin/starnavigation.php';
-    @include '../admin/starsidenavbar.php';
+    include '../starheaderCopy.php';
+    include '../starnavigationCopy.php';
+    include '../starsidenavbarCopy.php';
  ?>
        <!-- partial -->
        <div class="main-panel">
@@ -16,7 +16,7 @@
                     edit your post here
                   </p>
                   <?php
-                  require_once "../includes/dbh.inc.php";
+                  require_once "../../includes/dbh.inc.php";
                   $id=$_GET['id'];
                   $que="SELECT * FROM post 
                   left join category on post.category=category.category_id
@@ -36,7 +36,7 @@
                     </div>
                     <!-- ====================== -->
                     <?php
-                    require_once '../includes/dbh.inc.php';
+                    require_once '../../includes/dbh.inc.php';
                     $sqli="SELECT * FROM category";
                     $resu=mysqli_query($conn,$sqli) or die("query failed.");
                     ?>

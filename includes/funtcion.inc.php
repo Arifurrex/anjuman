@@ -49,15 +49,6 @@ function invalidpas($pas)
     }
     return $result;
 }  
-// function createUser($conn,$firstName,$lastName,$username,$pas,$role)
-// {
-//    $quer = "INSERT INTO `user`(`first_name`, `last_name`, `username`, `password`, `role`) 
-//    VALUES ('$firstName','$lastName','$username','$pas','$role')";
-//    mysqli_query($conn,$quer) OR die('query failed.');
-//    header('location:http://localhost:3000/admin/all-users.php?msg=success');
-// }
-
-
 function createUser($conn,$firstName,$lastName,$username,$pas,$role)
 {
    $quer = "INSERT INTO `user`(`first_name`, `last_name`, `username`, `password`, `role`) 
@@ -74,23 +65,6 @@ function createUser($conn,$firstName,$lastName,$username,$pas,$role)
    header('location:https://www.anjumanehefajoth.com/admin/all-users.php?msg=success');
    exit();
 }
-
-// function emptyInputlogin($loginusername,$loginpass){
-//     if(empty($loginusername) || empty($loginpass)){
-//         $result=true;
-//     }else{
-//         $result=false;
-//     }
-//     return $result;
-// }
-//  function loginuser($conn,$loginusername){
-//     $sqlie="SELECT * FROM user WHERE username ='$loginusername' ";
-//     mysqli_query($conn,$sqlie) OR die('query failed.');
-//     session_start();
-//     $_SESSION['username']='$loginusername';
-//     $_SESSION['password']='$loginpass';
-//     header('location:http://localhost:3000/admin/add-user.php?msg=loginsuccess');
-//  }
 
 // pos 
 function emptyinput($title,$descri,$category){
@@ -147,13 +121,13 @@ function emptyinput($title,$descri,$category){
              VALUES (?)";
              $stmt=mysqli_stmt_init($conn);
              if(!mysqli_stmt_prepare($stmt,$qur)){
-                header('location:https://www.anjumanehefajoth.com/admin/category.php?msg=success');
+                header('location:../admin/category/category.php?msg=success');
                 exit(); 
              }
              mysqli_stmt_bind_param($stmt,"s",$category_name);
              mysqli_stmt_execute($stmt);
              mysqli_stmt_close($stmt);
-             header('location:https://www.anjumanehefajoth.com/admin/category.php?msg=success');
+             header('location:../admin/category/category.php?msg=success');
              exit();
         }
     //   edi caegory 

@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="stylesheet" href="src/owl.carousel.min.css" />
   <link rel="stylesheet" href="src/superslides.css" />
-  <link rel="stylesheet" href="src/2-styles/main.css" />
+  <link rel="stylesheet" href="src/main.css" />
+  <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="images/linkicon.png" sizes="32x32" />
   <title>Anjumane Hefajothe Islam Bangladesh</title>
   <script src="src/1-scripts/nav.js" defer></script>
+
 </head>
 
 <body>

@@ -61,8 +61,8 @@ $sqli="select * from post
                           <td><?= $row['post_date']?></td>
                           <td><?= $row['username']?></td>
                           <td><img src="../../images/<?= $row['post_img']?>" alt="" style="width:50px;height:50px"></td>
-                          <td><a href="https://www.anjumanehefajoth.com/admin/edit-post.php?id=<?= $row['post_id']?>" class="btn btn-success btn-sm">Edit</a></td>
-                          <td><a href="https://www.anjumanehefajoth.com/admin/delete-post.php?poid=<?= $row['post_id']?>&caid=<?= $row['category_id']?>" class="btn btn-danger btn-sm">Delete</a></td>
+                          <td><a href="edit-post.php?id=<?= $row['post_id']?>" class="btn btn-success btn-sm">Edit</a></td>
+                          <td><a href="delete-post.php?poid=<?= $row['post_id']?>&caid=<?= $row['category_id']?>" class="btn btn-danger btn-sm">Delete</a></td>
                         </tr>
                         <?php
 	    }

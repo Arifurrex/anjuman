@@ -20,10 +20,18 @@
           width: 800px;
           flex-grow: 1;
           padding: 0 1em;
+          .category{
+            font-size:1rem;
+            color:var(--primary)!important;
+            background-color:var(--accent);
+            width: max-content;
+            padding:.2em .6em;
+          }
           .pos__title {
             color: var(--txt-secondary);
             line-height: 1.6;
             font-weight: 300;
+            margin-top:1em;
             &:hover {
               // color: var(--secondary);
             }

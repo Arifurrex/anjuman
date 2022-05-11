@@ -1,43 +1,99 @@
-.single-pos {
-  padding: 1em;
-  .single-pos__lefside {
-    .single-pos__title {
-      color: var(--clr-ligh);
-      line-height: 1.6;
-      &:hover {
-        color: var(--clr-red);
-      }
+.singlePage{
+       font-family: 'SolaimanLipi', sans-serif;
+  main{
+      display: flex;
+      gap:2rem;
+    .leftside{
+      width: 830px;
+        .single-pos {
+          .single-pos__lefside 
+          {
+              .single-pos__title 
+              {
+                font-size: 1.875rem;
+                font-weight: 600;
+                line-height: 1.6;
+                margin-top:1em;
+                color: var(--txt-secondary);
+                max-width: 550px;
+                &:hover {
+                  color: var(--clr-red);
+                }
+              }
+
+              .tagline 
+              {
+                @include flex(flex, row, flex-start, center);
+                gap: 1em;
+                margin-top: 1em;
+                color: var(--clr-lessradish);
+                font-size: 0.85rem;
+                font-size: clamp(0.65rem, calc(3vw+1rem), 0.85rem);
+                .fa,
+                .fas {
+                  margin-right: 2px;
+                  font-size: 0.75em;
+                  color: var(--clr-red);
+                  opacity: 0.8;
+                  &:hover {
+                    color: var(--clr-orange);
+                  }
+                }
+                &:hover {
+                  color: var(--clr-orange);
+                }
+              }
+          }
+          .single-pos__righside {
+            .pos__paragraph {
+                margin-top: 1em;
+                font-weight: 400;
+                color: var(--txt-primary);
+            }
+          }
+        }
     }
 
-    .tagline {
-      @include flex(flex, row, flex-start, center);
-      gap: 1em;
-      margin-top: 1em;
-      color: var(--clr-lessradish);
-      font-size: 0.85rem;
-      font-size: clamp(0.65rem, calc(3vw+1rem), 0.85rem);
-      .fa,
-      .fas {
-        margin-right: 2px;
-        font-size: 0.75em;
-        color: var(--clr-red);
-        opacity: 0.8;
-        &:hover {
-          color: var(--clr-orange);
+    .righside{
+      padding: 1em 0;
+      font-size: 1rem;
+      .search{
+         .search__title{
+         }
+      }
+    .recenpost{
+      .recenpost__title{
+        font-size:1.5rem;
+        padding: 1em 0;
+      }
+      .rpos > *{
+        margin-top: 1em;
+      }
+      
+      .rpos{
+        .rpos__righside{
+          .pos__title{
+            font-weight: 600;
+          }
+          .tagline{
+            display: flex;
+            gap:1em;
+            margin-top: .5em;
+            font-size: .75rem;
+            color: var(--txt-secondary);
+            .category , .date{
+              display: flex;
+              gap:.5em;
+              align-items: center;
+            }
+            .fa , .fas{
+              font-size: .65rem;
+              color: var(--txt-primary);
+            }
+          }
         }
       }
-      &:hover {
-        color: var(--clr-orange);
-      }
+    }  
     }
   }
-  .single-pos__righside {
-    .pos__paragraph {
-      margin-top: 1em;
-      font-weight: 400;
-      color: var(--clr-ligh);
-    }
-  }
-
-  //   ======
 }

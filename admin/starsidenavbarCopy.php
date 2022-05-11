@@ -16,11 +16,11 @@
       <!-- pos  -->
       <!-- ============== -->
       <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#all-pos" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/01.png" alt="menu icon"> <span class="menu-title">post</span><i class="menu-arrow"></i></a>
+        <a class="nav-link" data-toggle="collapse" href="#all-pos" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/01.png" alt="menu icon"> <span class="menu-title">নিউস পোস্ট</span><i class="menu-arrow"></i></a>
         <div class="collapse" id="all-pos">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/post/all-post.php">all post</a></li>
-            <li class="nav-item"> <a class="nav-link" href="https://www.anjumanehefajoth.com/admin/post/add-post.php">Add post</a></li>
+            <li class="nav-item"> <a class="nav-link" href="../post/all-post.php">সব পোস্ট</a></li>
+            <li class="nav-item"> <a class="nav-link" href="../post/add-post.php">পোস্ট যোগ করুন</a></li>
           </ul>
         </div>
       </li>
@@ -28,11 +28,11 @@
       <!-- category  -->
       <!-- ============== -->
       <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#all-cat" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/03.png" alt="menu icon"> <span class="menu-title">Category</span><i class="menu-arrow"></i></a>
+        <a class="nav-link" data-toggle="collapse" href="#all-cat" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/03.png" alt="menu icon"> <span class="menu-title">বিভাগ</span><i class="menu-arrow"></i></a>
         <div class="collapse" id="all-cat">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="../category/category.php">all category</a></li>
-            <li class="nav-item"> <a class="nav-link" href="../category/add-category.php">Add category</a></li>
+            <li class="nav-item"> <a class="nav-link" href="../category/category.php">বিভাগ সমূহ </a></li>
+            <li class="nav-item"> <a class="nav-link" href="../category/add-category.php">বিভাগ যোগ করুন</a></li>
           </ul>
         </div>
       </li>

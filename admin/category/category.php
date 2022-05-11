@@ -17,7 +17,7 @@ include '../starsidenavbarCopy.php';
       <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">All Category</h4>
+            <h4 class="card-title">সমস্ত বিভাগ</h4>
             <?php
             require_once '../../includes/dbh.inc.php';
             $limi = 3;
@@ -35,13 +35,13 @@ include '../starsidenavbarCopy.php';
               <thead>
                 <tr>
                   <th>
-                    S.No
+                    নং
                   </th>
                   <th>
-                    Category_name
+                    বিভাগ নাম
                   </th>
                   <th>
-                    Post
+                    পোস্ট
                   </th>
                   <th></th>
                   <th></th>
@@ -58,8 +58,8 @@ include '../starsidenavbarCopy.php';
                     <td><?= $row['post'] ?></td>
                     <!-- <td><?= $row['username'] ?></td> -->
 
-                    <td><a href="delete-category.php?id=<?= $row['category_id'] ?>" class="btn btn-outline-danger btn-sm">Delete</a></td>
-                    <td><a href="edit-category.php?id=<?= $row['category_id'] ?>" class="btn btn-outline-success btn-sm">Edit </a></td>
+                    <td><a href="delete-category.php?id=<?= $row['category_id'] ?>" class="btn btn-outline-danger btn-sm">মুছে ফেলা</a></td>
+                    <td><a href="edit-category.php?id=<?= $row['category_id'] ?>" class="btn btn-outline-success btn-sm">সংশোধন</a></td>
 
 
                   </tr>

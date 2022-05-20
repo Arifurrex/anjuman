@@ -1,74 +1,81 @@
 <?php
-    include '../starheaderCopy.php';
-    include '../starnavigationCopy.php';
-    include '../starsidenavbarCopy.php';
- ?>
-       <!-- partial -->
-       <div class="main-panel">
-        <div class="content-wrapper">
-          <div class="row">
-            <!-- ======================================= -->
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">post edit form</h4>
-                  <p class="card-description">
-                    edit your post here
-                  </p>
-                  <?php
-                  require_once "../../includes/dbh.inc.php";
-                  $id=$_GET['id'];
-                  $que="SELECT * FROM post 
+session_start();
+if ($_SESSION["role"] === 0) {
+  header('location:http://localhost/3.blog%20and%20newspapaper/anjumancopy/admin?error=loginfirst');
+  exit();
+}
+?>
+<?php
+include '../starheaderCopy.php';
+include '../starnavigationCopy.php';
+include '../starsidenavbarCopy.php';
+?>
+<!-- partial -->
+<div class="main-panel">
+  <div class="content-wrapper">
+    <div class="row">
+      <!-- ======================================= -->
+      <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">post edit form</h4>
+            <p class="card-description">
+              edit your post here
+            </p>
+            <?php
+            require_once "../../includes/dbh.inc.php";
+            $id = $_GET['id'];
+            $que = "SELECT * FROM post 
                   left join category on post.category=category.category_id
                   left join user on post.author=user.user_id
                   WHERE post_id='$id'";
-                  $resl=mysqli_query($conn,$que) or die("query failed");
-                  $row=mysqli_fetch_assoc($resl);
-                  ?>
-                  <form action="https://www.anjumanehefajoth.com/includes/update-post.inc.php?id=<?=$row['post_id'] ?>" method="post"  enctype="multipart/form-data" class="forms-sample">
-                    <div class="form-group">
-                      <label for="exampleInputName1">title</label>
-                      <input type="text" class="form-control" id="exampleInputName1" placeholder="title" name="title" value="<?= $row['title'] ?>"/>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleTextarea1">description</label>
-                      <textarea class="form-control" id="exampleTextarea1" rows="6"placeholder="description"  name="description"><?= $row['description'] ?></textarea>
-                    </div>
-                    <!-- ====================== -->
+            $resl = mysqli_query($conn, $que) or die("query failed");
+            $row = mysqli_fetch_assoc($resl);
+            ?>
+            <form action="https://www.anjumanehefajoth.com/includes/update-post.inc.php?id=<?= $row['post_id'] ?>" method="post" enctype="multipart/form-data" class="forms-sample">
+              <div class="form-group">
+                <label for="exampleInputName1">title</label>
+                <input type="text" class="form-control" id="exampleInputName1" placeholder="title" name="title" value="<?= $row['title'] ?>" />
+              </div>
+              <div class="form-group">
+                <label for="exampleTextarea1">description</label>
+                <textarea class="form-control" id="exampleTextarea1" rows="6" placeholder="description" name="description"><?= $row['description'] ?></textarea>
+              </div>
+              <!-- ====================== -->
+              <?php
+              require_once '../../includes/dbh.inc.php';
+              $sqli = "SELECT * FROM category";
+              $resu = mysqli_query($conn, $sqli) or die("query failed.");
+              ?>
+              <div class="form-group row">
+                <label class="col-sm-12 col-form-label">Category</label>
+                <div class="col-sm-12">
+                  <select class="form-control" name="category">
+                    <option selected value="<?= $row['category_name'] ?>"><?= $row['category_name'] ?></option>
                     <?php
-                    require_once '../../includes/dbh.inc.php';
-                    $sqli="SELECT * FROM category";
-                    $resu=mysqli_query($conn,$sqli) or die("query failed.");
-                    ?>
-                        <div class="form-group row">
-                          <label class="col-sm-12 col-form-label">Category</label>
-                          <div class="col-sm-12">
-                            <select class="form-control" name="category">
-                              <option selected value="<?=$row['category_name']?>"><?=$row['category_name']?></option>
-                              <?php
-                              while($rowd=mysqli_fetch_assoc($resu)){ ?>
-                              echo'<option  value="<?= $rowd['category_id']?>"><?= $rowd['category_name']?></option>' 
-                              <?php
-                              }?>
-                            </select>
-                          </div>
-                        </div>
-                      <!-- ================ -->
-                    
-                    <div class="form-group">
-                      <img src="../images/<?=$row['post_img']?>" alt="" style="height:220px">
-                      <input type="hidden"  name="old_post_img" value="<?=$row['post_img']?>"/>
-                      <div class="input-group col-xs-12">
-                      <input type="file" placeholder="image" name="post_img" value="<?=$row['post_img']?>"/>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-success mr-2">Submit</button>
-                  </form>
+                    while ($rowd = mysqli_fetch_assoc($resu)) { ?>
+                      echo'<option value="<?= $rowd['category_id'] ?>"><?= $rowd['category_name'] ?></option>'
+                    <?php
+                    } ?>
+                  </select>
                 </div>
               </div>
-            </div>
-            <!-- =================================== -->
-            <!-- <div class="col-md-5 d-flex align-items-stretch">
+              <!-- ================ -->
+
+              <div class="form-group">
+                <img src="../images/<?= $row['post_img'] ?>" alt="" style="height:220px">
+                <input type="hidden" name="old_post_img" value="<?= $row['post_img'] ?>" />
+                <div class="input-group col-xs-12">
+                  <input type="file" placeholder="image" name="post_img" value="<?= $row['post_img'] ?>" />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success mr-2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- =================================== -->
+      <!-- <div class="col-md-5 d-flex align-items-stretch">
               <div class="row flex-grow">
                 <div class="col-12 grid-margin">
                   <div class="card">
@@ -157,7 +164,7 @@
                 </div>
               </div>
             </div> -->
-            <!-- <div class="col-md-7 grid-margin stretch-card">
+      <!-- <div class="col-md-7 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Input size</h4>
@@ -212,7 +219,7 @@
                 </div>
               </div>
             </div> -->
-            <!-- <div class="col-md-6 grid-margin stretch-card">
+      <!-- <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Checkbox Controls</h4>
@@ -282,7 +289,7 @@
                 </div>
               </div>
             </div> -->
-            <!-- <div class="col-md-6 grid-margin stretch-card">
+      <!-- <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Checkbox Flat Controls</h4>
@@ -352,8 +359,8 @@
                 </div>
               </div>
             </div> -->
-            <!-- ================================================= -->
-            <!-- <div class="col-12 grid-margin">
+      <!-- ================================================= -->
+      <!-- <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Horizontal Two column</h4>
@@ -502,25 +509,24 @@
                 </div>
               </div>
             </div> -->
-            <!-- ============================================ -->
-          </div>
-        </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:../../partials/_footer.html -->
-        <footer class="footer">
-          <div class="container-fluid clearfix">
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2021 <a href="" target="_blank">alinessa</a>. All rights reserved.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
-          </div>
-        </footer>
-        <!-- partial -->
-      </div>
-      <!-- main-panel ends -->
+      <!-- ============================================ -->
     </div>
-    <!-- page-body-wrapper ends -->
   </div>
-  <!-- container-scroller -->
-    <?php
-    @include '../admin/startscript.php';
-    ?>
-   
+  <!-- content-wrapper ends -->
+  <!-- partial:../../partials/_footer.html -->
+  <footer class="footer">
+    <div class="container-fluid clearfix">
+      <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2021 <a href="" target="_blank">alinessa</a>. All rights reserved.</span>
+      <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
+    </div>
+  </footer>
+  <!-- partial -->
+</div>
+<!-- main-panel ends -->
+</div>
+<!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<?php
+@include '../admin/startscript.php';
+?>

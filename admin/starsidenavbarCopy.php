@@ -28,7 +28,7 @@
       <!-- category  -->
       <!-- ============== -->
       <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#all-cat" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/03.png" alt="menu icon"> <span class="menu-title">বিভাগ</span><i class="menu-arrow"></i></a>
+        <a class="nav-link" data-toggle="collapse" href="#all-cat" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/03.png" alt="menu icon"> <span class="menu-title">নিউস বিভাগ</span><i class="menu-arrow"></i></a>
         <div class="collapse" id="all-cat">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="../category/category.php">বিভাগ সমূহ </a></li>

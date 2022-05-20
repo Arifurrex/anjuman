@@ -1223,7 +1223,14 @@ nav {
   padding: 2rem 0;
 }
 
-.news .leftside {
+@media (min-width: 765px) {
+  .news .news__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.news .news__container {
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -1231,15 +1238,17 @@ nav {
   flex-wrap: wrap;
   box-shadow: var(--bs1);
   border-radius: 10px;
+  border: 2px solid #3700ff;
 }
 
-.news .leftside .pos {
+.news .news__container .pos {
   color: var(--txt-primary);
-  width: 420px;
+  width: 180px;
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-grow: 1;
   flex-wrap: wrap;
   gap: 1em;
   padding: 1em;
@@ -1247,13 +1256,13 @@ nav {
   transition: all 0.5s linear;
 }
 
-.news .leftside .pos .pos__righside {
+.news .news__container .pos .pos__righside {
   width: 800px;
   flex-grow: 1;
   padding: 0 1em;
 }
 
-.news .leftside .pos .pos__righside .category {
+.news .news__container .pos .pos__righside .category {
   font-size: 1rem;
   color: var(--primary) !important;
   background-color: var(--accent);
@@ -1261,20 +1270,22 @@ nav {
   padding: .2em .6em;
 }
 
-.news .leftside .pos .pos__righside .pos__title {
+.news .news__container .pos .pos__righside .pos__title {
+  font-size: 1rem;
+  font-size: clamp(0.85rem, calc(3vw+1rem), 1rem);
   color: var(--txt-secondary);
   line-height: 1.6;
   font-weight: 300;
   margin-top: 1em;
 }
 
-.news .leftside .pos .pos__righside .pos__paragraph {
+.news .news__container .pos .pos__righside .pos__paragraph {
   margin-top: 1em;
   font-weight: 400;
   color: var(--txt-primary);
 }
 
-.news .leftside .pos .pos__righside .tagline {
+.news .news__container .pos .pos__righside .tagline {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -1287,8 +1298,8 @@ nav {
   font-weight: 100;
 }
 
-.news .leftside .pos .pos__righside .tagline .fa,
-.news .leftside .pos .pos__righside .tagline .fas {
+.news .news__container .pos .pos__righside .tagline .fa,
+.news .news__container .pos .pos__righside .tagline .fas {
   margin-right: 2px;
   font-size: 0.75em;
   font-weight: 200;
@@ -1296,29 +1307,29 @@ nav {
   opacity: 0.8;
 }
 
-.news .leftside .pos .pos__righside .tagline .fa:hover,
-.news .leftside .pos .pos__righside .tagline .fas:hover {
+.news .news__container .pos .pos__righside .tagline .fa:hover,
+.news .news__container .pos .pos__righside .tagline .fas:hover {
   color: var(--secondary);
 }
 
-.news .leftside .pos .pos__righside .tagline:hover {
+.news .news__container .pos .pos__righside .tagline:hover {
   color: var(--primary);
 }
 
-.news .leftside .pos:hover {
+.news .news__container .pos:hover {
   background-color: var(--clr-ligh);
   box-shadow: var(--bs);
   transition: all 0.5s linear;
 }
 
-.news .leftside .paginatinon .btn {
+.news .news__container .paginatinon .btn {
   background: var(--clr-greeny);
   color: var(--clr-ligh);
   padding: 0.2em 0.5em;
   margin-bottom: 1em;
 }
 
-.news .leftside .paginatinon .active {
+.news .news__container .paginatinon .active {
   background-color: var(--clr-radish);
   padding: 0.3em 1em;
 }

@@ -1,33 +1,33 @@
 <?php
-session_start();
-if ($_SESSION["role"] === 0) {
-  header('location:http://localhost/3.blog%20and%20newspapaper/anjumancopy/admin?error=loginfirst');
-  exit();
-}
+    session_start();
+    if ($_SESSION["role"] === 0) {
+    header('location:http://localhost/3.blog%20and%20newspapaper/anjumancopy/admin?error=loginfirst');
+    exit();
+    }
 ?>
 <?php
-include '../starheaderCopy.php';
-include '../starnavigationCopy.php';
-include '../starsidenavbarCopy.php';
+    include '../starheaderCopy.php';
+    include '../starnavigationCopy.php';
+    include '../starsidenavbarCopy.php';
 ?>
 
 <!-- partiala -->
 <div class="main-panel">
   <div class="content-wrapper">
     <?php
-    require_once "../../includes/dbh.inc.php";
-    $limit_per_page = 20;
-    if (isset($_GET['page'])) {
-      $page = $_GET['page'];
-    } else {
-      $page = 1;
-    }
-    $offset = ($page - 1) * $limit_per_page;
-    $sqli = "select * from post
-	left join category on post.category=category.category_id
-	left join user on post.author=user.user_id
-	ORDER BY post_id DESC LIMIT $offset,$limit_per_page";
-    $resl = mysqli_query($conn, $sqli) or die('query failed.');
+        require_once "../../includes/dbh.inc.php";
+        $limit_per_page = 20;
+        if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+        } else {
+        $page = 1;
+        }
+        $offset = ($page - 1) * $limit_per_page;
+        $sqli = "select * from post
+        left join category on post.category=category.category_id
+        left join user on post.author=user.user_id
+        ORDER BY post_id DESC LIMIT $offset,$limit_per_page";
+        $resl = mysqli_query($conn, $sqli) or die('query failed.');
     ?>
     <div class="row">
       <div class="col-12 grid-margin">

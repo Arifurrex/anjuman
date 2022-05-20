@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <!-- <div class="container"> -->
     <section class="header">
       <div class="logo">আঞ্জুমানে হেফাজতে ইসলাম</div>
       <div class="hamburger">
@@ -68,4 +68,4 @@
 
       </nav>
     </section>
-  </div>
+  <!-- </div> -->

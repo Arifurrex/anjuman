@@ -80,7 +80,7 @@ function emptyinput($title,$descri,$category){
          VALUES ('$title','$descri','$category','$post_date',$author,'$imagename');";
          $qu .="UPDATE `category` SET `post`= post + 1 WHERE `category_id`='$category'";
          mysqli_multi_query($conn,$qu);
-         header('location:https://www.anjumanehefajoth.com/admin/all-post.php?msg=success');
+         header('location:../admin/post/all-post.php?msg=success');
     }
 //     function inserpos($title,$descri,$category,$post_date,$author,$imagename,$conn){
 //         $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `author`, `post_img`) 

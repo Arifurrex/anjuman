@@ -26,7 +26,7 @@
                     <div class="single-pos__righside">
                         <!-- <img src="../images/<?=$row['post_img']?>" alt="" class="pos__image"> -->
                         <div class="pos__paragraph paragraph">
-                        <p><?= $row['description']?></p>
+                        <p><?= htmlspecialchars_decode($row['description']) ?></p>
                         </div>
                     </div>
                 </div>

@@ -66,7 +66,7 @@ function createUser($conn,$firstName,$lastName,$username,$pas,$role)
    exit();
 }
 
-// pos 
+// post 
 function emptyinput($title,$descri,$category){
     if(empty($title) || empty($descri) || empty($category)){
        $result=true;
@@ -75,38 +75,13 @@ function emptyinput($title,$descri,$category){
     }
     return $result;
     }
-    function inserpos($title,$descri,$category,$post_date,$author,$imagename,$conn){
+    function insertpost($title,$descri,$category,$post_date,$author,$imagename,$conn){
          $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `author`, `post_img`) 
          VALUES ('$title','$descri','$category','$post_date',$author,'$imagename');";
          $qu .="UPDATE `category` SET `post`= post + 1 WHERE `category_id`='$category'";
          mysqli_multi_query($conn,$qu);
          header('location:../admin/post/all-post.php?msg=success');
     }
-//     function inserpos($title,$descri,$category,$post_date,$author,$imagename,$conn){
-//         $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `author`, `post_img`) 
-//         VALUES (?,?,?,?,?,?)";
-//         $stmt=mysqli_stmt_init($conn);
-//         if(!mysqli_stmt_prepare($stmt,$qu)){
-//             header('location:http://localhost:3000/admin/add-user.php?error=stmtfailed!!');
-//           }
-//         mysqli_stmt_bind_param($stmt,"ssssis",$title,$descri,$category,$post_date,$author,$imagename);
-//         mysqli_stmt_execute($stmt);
-//         mysqli_stmt_close($stmt);
-//         header('location:http://localhost:3000/admin/all-post.php?msg=success');
-//    }
-// function inserpos($title,$descri,$category,$post_date,$author,$imagename,$conn){
-//     $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `author`, `post_img`) 
-//     VALUES (?,?,?,?,?,?);";
-//     $qu .="UPDATE `category` SET `post`=post+1 WHERE `category_id`=$category";
-//     $stmt=mysqli_stmt_init($conn);
-//     if(!mysqli_stmt_prepare($stmt,$qu)){
-//         header('location:http://localhost:3000/admin/add-user.php?error=stmtfailed!!');
-//       }
-//     mysqli_stmt_bind_param($stmt,"ssssis",$title,$descri,$category,$post_date,$author,$imagename);
-//     mysqli_stmt_execute($stmt);
-//     mysqli_stmt_close($stmt);
-//     header('location:http://localhost:3000/admin/all-post.php?msg=success');
-// }
     // category
     function emptyinputcategory($category_name){
         if(empty($category_name)){

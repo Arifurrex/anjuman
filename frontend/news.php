@@ -38,7 +38,7 @@ if (file_exists('includes/dbh.inc.php')) {
                     <div class="tagline">
                         <div class="author"><a href="http://anjumanehefajoth.com/author.php?author=<?= $row['author'] ?>"><?= $row['username'] ?></a></div>
                     </div>
-                    <div class="pos__paragraph paragraph"><?= substr($row['description'], 0, 550) . "..."; ?></div>
+                    <div class="pos__paragraph paragraph"><?= substr(htmlspecialchars_decode($row['description']), 0, 450) . "..."; ?></div>
                 </div>
             </div>
         <?php } else {
@@ -52,7 +52,7 @@ if (file_exists('includes/dbh.inc.php')) {
                     <div class="tagline">
                         <div class="author"><a href="http://anjumanehefajoth.com/author.php?author=<?= $rowAlQuran['author'] ?>"><?= $rowAlQuran['username'] ?></a></div>
                     </div>
-                    <div class="pos__paragraph paragraph"><?= substr($rowAlQuran['description'], 0, 550) . "..."; ?></div>
+                    <div class="pos__paragraph paragraph"><?= substr(htmlspecialchars_decode($row['description']), 0, 450) . "..."; ?></div>
                 </div>
             </div>
         <?php } else {
@@ -67,7 +67,7 @@ if (file_exists('includes/dbh.inc.php')) {
                     <div class="tagline">
                         <div class="author"><a href="http://anjumanehefajoth.com/author.php?author=<?= $rowthird['author'] ?>"><?= $rowthird['username'] ?></a></div>
                     </div>
-                    <div class="pos__paragraph paragraph"><?= substr($rowthird['description'], 0, 550) . "..."; ?></div>
+                    <div class="pos__paragraph paragraph"><?= substr(htmlspecialchars_decode($row['description']), 0, 450) . "..."; ?></div>
                 </div>
             </div>
         <?php } else {
@@ -82,7 +82,7 @@ if (file_exists('includes/dbh.inc.php')) {
                     <div class="tagline">
                         <div class="author"><a href="http://anjumanehefajoth.com/author.php?author=<?= $rowthird['author'] ?>"><?= $rowthird['username'] ?></a></div>
                     </div>
-                    <div class="pos__paragraph paragraph"><?= substr($rowthird['description'], 0, 550) . "..."; ?></div>
+                    <div class="pos__paragraph paragraph"><?= substr(htmlspecialchars_decode($row['description']), 0, 450) . "..."; ?></div>
                 </div>
             </div>
         <?php } else {

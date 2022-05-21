@@ -1,7 +1,7 @@
  
 <?php
 include 'frontend/header.php'; 
-include 'frontend/hero.php';
+// include 'frontend/hero.php';
 include 'frontend/news.php';
 include 'frontend/email&contact.php';
 include 'frontend/history.php';

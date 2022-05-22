@@ -29,7 +29,7 @@ if (file_exists('includes/dbh.inc.php')) {
 }
 ?>
 <section class="news">
-    <div class="news__container">
+    <div class="newsPost__container">
         <?php if (!empty($row)) { ?>
             <div class="pos">
                 <div class="pos__righside">
@@ -89,9 +89,50 @@ if (file_exists('includes/dbh.inc.php')) {
             echo "";
         } ?>
     </div>
-    <!-- ====================================== -->
-    <?php
-    // include 'sidebar.php';
-    ?>
+    <div class="newsPost__container newsPost__container--modifier">
+        <?php if (!empty($row)) { ?>
+            <div class="pos pos--modifier">
+                <div class="pos__righside">
+                    <div class="category category--modifier">অন্যান্য প্রবন্ধসমূহ</div>
+                    <h4 class="pos__title"><a href="single.php?id=<?= $row['post_id'] ?>"> <?= $row['title'] ?></a></h4>
+                    <div class="tagline">
+                        <div class="author"><a href="http://anjumanehefajoth.com/author.php?author=<?= $row['author'] ?>"><?= $row['username'] ?></a></div>
+                    </div>
+                    <div class="pos__paragraph paragraph"><?= substr(htmlspecialchars_decode($row['description']), 0, 450) . "..."; ?></div>
+                </div>
+            </div>
+        <?php } else {
+            echo "";
+        } ?>
+
+        <?php if (!empty($rowthird)) { ?>
+            <div class="pos pos--modifier">
+                <div class="pos__righside">
+                    <div class="category category--modifier"><a href="http://anjumanehefajoth.com/category.php?catid=<?= $rowthird['category'] ?>"><?= $rowthird['category_name'] ?></a></div>
+                    <h4 class="pos__title"><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
+                    <h4 class="pos__title"><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
+                    <h4 class="pos__title"><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
+                    
+                </div>
+            </div>
+        <?php } else {
+            echo "";
+        } ?>
+
+        <?php if (!empty($rowthird)) { ?>
+            <div class="pos pos--modifier">
+                <div class="pos__righside">
+                    <div class="category category--modifier">প্রচ্ছদ</div>
+                    <h4 class="pos__title"><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
+                    <div class="tagline">
+                        <div class="author"><a href="http://anjumanehefajoth.com/author.php?author=<?= $rowthird['author'] ?>"><?= $rowthird['username'] ?></a></div>
+                    </div>
+                    <div class="pos__paragraph paragraph"><?= substr(htmlspecialchars_decode($row['description']), 0, 450) . "..."; ?></div>
+                </div>
+            </div>
+        <?php } else {
+            echo "";
+        } ?>
+    </div>
 </section>
 <!-- </div> -->

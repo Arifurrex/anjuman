@@ -25,7 +25,7 @@
         $offset = ($page - 1) * $limit_per_page;
         $sqli = "select * from post
         left join category on post.category=category.category_id
-        left join user on post.author=user.user_id
+        left join writter on post.writter=writter.writter_id
         ORDER BY post_id DESC LIMIT $offset,$limit_per_page";
         $resl = mysqli_query($conn, $sqli) or die('query failed.');
     ?>
@@ -59,8 +59,8 @@
                         <td><?= $row['title'] ?></td>
                         <td><?= $row['category_name'] ?></td>
                         <td><?= $row['post_date'] ?></td>
-                        <td><?= $row['username'] ?></td>
-                        <td><img src="../../images/<?= $row['post_img'] ?>" alt="" style="width:50px;height:50px"></td>
+                        <td><?= $row['writter_name'] ?></td>
+                        <!-- <td><img src="../../images/<?= $row['post_img'] ?>" alt="" style="width:50px;height:50px"></td> -->
                         <td><a href="edit-post.php?id=<?= $row['post_id'] ?>" class="btn btn-success btn-sm">Edit</a></td>
                         <td><a href="delete-post.php?poid=<?= $row['post_id'] ?>&caid=<?= $row['category_id'] ?>" class="btn btn-danger btn-sm">Delete</a></td>
                       </tr>

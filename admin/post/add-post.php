@@ -52,20 +52,39 @@ include '../starsidenavbarCopy.php';
               $sqli = "SELECT * FROM category";
               $resu = mysqli_query($conn, $sqli) or die("query failed.");
               ?>
-              <div class="form-group row">
-                <label class="col-sm-12 col-form-label">বিভাগ</label>
-                <div class="col-sm-12">
-                  <select class="form-control" name="category">
-                    <option selected>বিভাগ নির্বাচন করুন</option>
-                    <?php
-                    while ($rowd = mysqli_fetch_assoc($resu)) { ?>
-                      echo'<option value="<?= $rowd['category_id'] ?>"><?= $rowd['category_name'] ?></option>'
-                    <?php
-                    } ?>
-                  </select>
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                  <label class="col-sm-12 col-form-label">বিভাগ</label>
+                  <div class="col-sm-12">
+                    <select class="form-control" name="category">
+                      <option selected>বিভাগ নির্বাচন করুন</option>
+                      <?php
+                      while ($rowd = mysqli_fetch_assoc($resu)) { ?>
+                        echo'<option value="<?= $rowd['category_id'] ?>"><?= $rowd['category_name'] ?></option>'
+                      <?php
+                      } ?>
+                    </select>
+                  </div>
+                </div>
+                <!-- ================ -->
+                <?php
+                require_once '../../includes/dbh.inc.php';
+                $sqlw = "SELECT * FROM writter";
+                $resw = mysqli_query($conn, $sqlw) or die("query failed.");
+                ?>
+                <div class="form-group col-sm-6">
+                  <label class="col-sm-12 col-form-label"> লেখক</label>
+                  <div class="col-sm-12">
+                    <select class="form-control" name="category">
+                      <?php
+                      while ($roww = mysqli_fetch_assoc($resw)) { ?>
+                        echo'<option value="<?= $roww['writter_id'] ?>"><?= $roww['writter_name'] ?></option>'
+                      <?php
+                      } ?>
+                    </select>
+                  </div>
                 </div>
               </div>
-              <!-- ================ -->
 
               <!-- <div class="form-group">
                 <div class="input-group col-xs-12">

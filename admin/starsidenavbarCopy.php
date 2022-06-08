@@ -11,11 +11,51 @@
           </div>
         </div>
       </li>
-
       <!-- ============== -->
       <!-- pos  -->
       <!-- ============== -->
       <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#monthly-post" aria-expanded="false" aria-controls="monthly-post"> <img class="menu-icon" src="../images/menu_icons/01.png" alt="menu icon"> <span class="menu-title">মাসিক আঞ্জুমান</span><i class="menu-arrow"></i></a>
+        <div class="collapse" id="monthly-post">
+          <ul class="nav flex-column sub-menu">
+            <!-- post  -->
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#all-pos" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/01.png" alt="menu icon"> <span class="menu-title">নিউস পোস্ট</span><i class="menu-arrow"></i></a>
+              <div class="collapse" id="all-pos">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../post/all-post.php">সব পোস্ট</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../post/add-post.php">পোস্ট যোগ করুন</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- category  -->
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#all-cat" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/03.png" alt="menu icon"> <span class="menu-title">নিউস বিভাগ</span><i class="menu-arrow"></i></a>
+              <div class="collapse" id="all-cat">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../category/category.php">বিভাগ সমূহ </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../category/add-category.php">বিভাগ যোগ করুন</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- month input  -->
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#monthYear" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/03.png" alt="menu icon"> <span class="menu-title">লেখকবৃন্দ</span><i class="menu-arrow"></i></a>
+              <div class="collapse" id="monthYear">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../newsWritter/writter.php">লেখকবৃন্দ</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../newsWritter/add-writter.php">লেখক যোগ করুন</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- ============== -->
+      <!-- pos  -->
+      <!-- ============== -->
+      <!-- <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#all-pos" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/01.png" alt="menu icon"> <span class="menu-title">নিউস পোস্ট</span><i class="menu-arrow"></i></a>
         <div class="collapse" id="all-pos">
           <ul class="nav flex-column sub-menu">
@@ -23,11 +63,11 @@
             <li class="nav-item"> <a class="nav-link" href="../post/add-post.php">পোস্ট যোগ করুন</a></li>
           </ul>
         </div>
-      </li>
+      </li> -->
       <!-- ============== -->
       <!-- category  -->
       <!-- ============== -->
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#all-cat" aria-expanded="false" aria-controls="all-pos"> <img class="menu-icon" src="../images/menu_icons/03.png" alt="menu icon"> <span class="menu-title">নিউস বিভাগ</span><i class="menu-arrow"></i></a>
         <div class="collapse" id="all-cat">
           <ul class="nav flex-column sub-menu">
@@ -35,7 +75,7 @@
             <li class="nav-item"> <a class="nav-link" href="../category/add-category.php">বিভাগ যোগ করুন</a></li>
           </ul>
         </div>
-      </li>
+      </li> -->
       <!-- ============== -->
       <!-- members  -->
       <!-- ============== -->

@@ -105,9 +105,33 @@ function emptyinput($title,$descri,$category){
              header('location:../admin/category/category.php?msg=success');
              exit();
         }
-    //   edi caegory 
+//   edi caegory 
 
-
+// writter
+function emptyinputwritter($writter_name)
+{
+    if (empty($writter_name)) {
+        $result = true;
+    } else {
+        $result = false;
+    }
+    return $result;
+}
+function insewritter($writter_name, $conn)
+{
+    $qur = "INSERT INTO `writter`( `writter_name`) 
+             VALUES (?)";
+    $stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $qur)) {
+        header('location:../admin/newsWritter/writter.php?msg=success');
+        exit();
+    }
+    mysqli_stmt_bind_param($stmt, "s", $writter_name);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
+    header('location:../admin/newsWritter/writter.php?msg=success');
+    exit();
+}
 // ==========================================
     // member function
 // ==========================================    

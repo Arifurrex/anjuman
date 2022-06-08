@@ -105,34 +105,37 @@ if (file_exists('includes/dbh.inc.php')) {
             echo "";
         } ?>
 
-        <?php if (!empty($rowthird)) { ?>
-            <div class="pos pos--modifier">
+        <div class="pos pos--modifier">
+            <?php if (!empty($rowthird)) { ?>
                 <div class="pos__righside">
                     <div class="category category--modifier"><a href="http://anjumanehefajoth.com/category.php?catid=<?= $rowthird['category'] ?>"><?= $rowthird['category_name'] ?></a></div>
-                    <h4 class="pos__title"><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
-                    <h4 class="pos__title"><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
-                    <h4 class="pos__title"><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
-                    
+                    <h4 class="pos__title pos__title--modifier"><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
+                    <h4 class="pos__title pos__title--modifier"><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
+                    <h4 class="pos__title pos__title--modifier"><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
                 </div>
-            </div>
-        <?php } else {
-            echo "";
-        } ?>
-
-        <?php if (!empty($rowthird)) { ?>
-            <div class="pos pos--modifier">
+            <?php } else {
+                echo "";
+            } ?>
+            <?php if (!empty($rowAlQuran)) { ?>
                 <div class="pos__righside">
-                    <div class="category category--modifier">প্রচ্ছদ</div>
-                    <h4 class="pos__title"><a href="single.php?id=<?= $rowthird['post_id'] ?>"> <?= $rowthird['title'] ?></a></h4>
-                    <div class="tagline">
-                        <div class="author"><a href="http://anjumanehefajoth.com/author.php?author=<?= $rowthird['author'] ?>"><?= $rowthird['username'] ?></a></div>
-                    </div>
-                    <div class="pos__paragraph paragraph"><?= substr(htmlspecialchars_decode($row['description']), 0, 450) . "..."; ?></div>
+                    <div class="category category--modifier"><a href="http://anjumanehefajoth.com/category.php?catid=<?= $rowAlQuran['category'] ?>"><?= $rowAlQuran['category_name'] ?></a></div>
+                    <h4 class="pos__title pos__title--modifier"><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="single.php?id=<?= $rowAlQuran['post_id'] ?>"> <?= $rowAlQuran['title'] ?></a></h4>
+                    <h4 class="pos__title pos__title--modifier"><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="single.php?id=<?= $rowAlQuran['post_id'] ?>"> <?= $rowAlQuran['title'] ?></a></h4>
+                    <h4 class="pos__title pos__title--modifier"><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="single.php?id=<?= $rowAlQuran['post_id'] ?>"> <?= $rowAlQuran['title'] ?></a></h4>
                 </div>
+            <?php } else {
+                echo "";
+            } ?>
+        </div>
+
+
+        <div class="pos pos--modifier">
+            <div class="pos__righside">
+                <div class="category category--modifier">প্রচ্ছদ</div>
+                <img src="images/1.png" alt="cover">
             </div>
-        <?php } else {
-            echo "";
-        } ?>
+        </div>
+       
     </div>
 </section>
 <!-- </div> -->

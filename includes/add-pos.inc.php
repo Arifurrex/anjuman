@@ -5,14 +5,16 @@ if(isset($_POST['submit'])){
   $descri= htmlspecialchars($_POST['description'], ENT_NOQUOTES, 'UTF-8');
   $category=$_POST['category'];
   $post_date=date('d M Y');
-  $author=$_SESSION["user_id"];
+  $writter = $_POST['writter_id'];
+  $tag= $_POST['tag'];
+
      require_once '../includes/dbh.inc.php';
      require_once '../includes/funtcion.inc.php';
-     if(emptyinput($title,$descri,$category) == !false ){
-          header('location:http://anjumanehefajoth.com/admin/add-post.php?error=emptyinput');
+     if(emptyinput($title,$descri,$category,$writter, $tag) == !false ){
+          header('location:../admin/post/add-post.php?msg=emptyinput');
           exit();
      }
-     insertpost($title,$descri,$category,$post_date,$author,$imagename,$conn);
+     insertpost($title,$descri,$category,$post_date,$writter,$tag,$imagename,$conn);
      }else{
      header('location:http://anjumanehefajoth.com/admin/add-post.php');
      exit();

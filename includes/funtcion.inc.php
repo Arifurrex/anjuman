@@ -67,17 +67,17 @@ function createUser($conn,$firstName,$lastName,$username,$pas,$role)
 }
 
 // post 
-function emptyinput($title,$descri,$category){
-    if(empty($title) || empty($descri) || empty($category)){
+function emptyinput($title,$descri,$category, $writter, $tag){
+    if(empty($title) || empty($descri) || empty($category) || empty($writter) || empty($tag)){
        $result=true;
     }else{
         $result=false;
     }
     return $result;
     }
-    function insertpost($title,$descri,$category,$post_date,$author,$imagename,$conn){
-         $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `author`, `post_img`) 
-         VALUES ('$title','$descri','$category','$post_date',$author,'$imagename');";
+    function insertpost($title,$descri,$category,$post_date,$writter, $tag, $imagename,$conn){
+         $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `writter`,`tag`, `post_img`) 
+         VALUES ('$title','$descri','$category','$post_date','$writter','$tag','$imagename');";
          $qu .="UPDATE `category` SET `post`= post + 1 WHERE `category_id`='$category'";
          mysqli_multi_query($conn,$qu);
          header('location:../admin/post/all-post.php?msg=success');

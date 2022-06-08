@@ -78,8 +78,12 @@ include '../starsidenavbarCopy.php';
                 </div>
               </div>
               <!-- ================ -->
-
-              <!-- <div class="form-group">
+              <!-- tag  -->
+              <div class="form-group">
+                <label for="exampleInputName1">প্রসঙ্গ</label>
+                <input type="text" class="form-control" id="exampleInputName1" placeholder="কমা দিয়ে প্রসঙ্গ ট্যাগ করুন (ex- রমজান, হজ)" name="tag" value=<?= $row['description'] ?>/>
+              </div>
+              <!-- <div class=" form-group">
                 <img src="../images/<?= $row['post_img'] ?>" alt="" style="height:220px">
                 <input type="hidden" name="old_post_img" value="<?= $row['post_img'] ?>" />
                 <div class="input-group col-xs-12">

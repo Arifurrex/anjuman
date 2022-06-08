@@ -23,7 +23,7 @@ include '../starsidenavbarCopy.php';
               <?php
               if (isset($_GET['msg'])) {
                 echo '<div class="alert">';
-                if ($_GET['msg'] == 'emptyinpute') {
+                if ($_GET['msg'] == 'emptyinput') {
                   echo "please fill all input";
                 } else if ($_GET['msg'] == 'invalidfirstname') {
                   echo "please fill valid firstname";
@@ -85,7 +85,11 @@ include '../starsidenavbarCopy.php';
                   </div>
                 </div>
               </div>
-
+              <!-- tag  -->
+              <div class="form-group">
+                <label for="exampleInputName1">প্রসঙ্গ</label>
+                <input type="text" class="form-control" id="exampleInputName1" placeholder="কমা দিয়ে প্রসঙ্গ ট্যাগ করুন (ex- রমজান, হজ)" name="tag" />
+              </div>
               <!-- <div class="form-group">
                 <div class="input-group col-xs-12">
                   <input type="file" placeholder="post_img" name="post_img" />
@@ -106,13 +110,9 @@ include '../starsidenavbarCopy.php';
       <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
     </div>
   </footer>
-  <!-- partial -->
 </div>
-<!-- main-panel ends -->
 </div>
-<!-- page-body-wrapper ends -->
 </div>
-<!-- container-scroller -->
 <?php
 include '../startscriptCopy.php';
 ?>

@@ -24,15 +24,15 @@ include '../starsidenavbarCopy.php';
               if (isset($_GET['msg'])) {
                 echo '<div class="alert">';
                 if ($_GET['msg'] == 'emptyinput') {
-                  echo "please fill all input";
-                } else if ($_GET['msg'] == 'invalidfirstname') {
-                  echo "please fill valid firstname";
-                } else if ($_GET['msg'] == 'invalidlastName') {
-                  echo "please fill valid lastName";
-                } else if ($_GET['msg'] == 'usernametaken') {
-                  echo "username is taken";
-                } else if ($_GET['msg'] == 'invalidpas') {
-                  echo "password must be 8 character";
+                  echo "সব ইনপুট পূরণ করুন";
+                } else if ($_GET['msg'] == 'emptytitle') {
+                  echo "শিরোনাম পূরণ করুন";
+                } else if ($_GET['msg'] == 'emptydescription') {
+                  echo "বিবরণ পূরণ করুন";
+                } else if ($_GET['msg'] == 'emptycategory') {
+                  echo "বিভাগ নির্বাচন করুন";
+                } else if ($_GET['msg'] == 'writter') {
+                  echo "যারা এই বর্ণনা লিখেছেন";
                 }
                 echo '<span class="closebtn" id="closebtn"onclick="this.parentElement.style.display=' . 'none' . ';" >&times;</span>
                 </div>';
@@ -40,7 +40,8 @@ include '../starsidenavbarCopy.php';
               ?>
               <div class="form-group">
                 <label for="exampleInputName1">শিরোনাম</label>
-                <input type="text" class="form-control" id="exampleInputName1" placeholder="title" name="title" />
+                <input type="text" class="form-control" id="exampleInputName1" placeholder="title" name="title" 
+                value="<?= (isset($_POST['title'])) ? $_POST['title'] : '' ?>"/>
               </div>
               <div class="form-group">
                 <label for="exampleTextarea1">বর্ণনা</label>

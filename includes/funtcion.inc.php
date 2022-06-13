@@ -68,13 +68,22 @@ function createUser($conn,$firstName,$lastName,$username,$pas,$role)
 
 // post 
 function emptyinput($title,$descri,$category, $writter, $tag){
-    if(empty($title) || empty($descri) || empty($category) || empty($writter) || empty($tag)){
-       $result=true;
-    }else{
-        $result=false;
-    }
+    (empty($title) || empty($descri) || empty($category) || empty($writter) || empty($tag)) ? $result=true : $result=false;
     return $result;
     }
+    function emptyTitle($title){ 
+        empty($title)? $result=true:$result=false;
+        return $result;
+    }
+    function emptyDescription($descri){ 
+        (empty($descri))? $result=true : $result=false;
+        return $result;
+    }
+    function emptyCategory($category){
+     (empty($category)) ? $result = true : $result = false;
+    return $result;
+    }
+
     function insertpost($title,$descri,$category,$post_date,$writter, $tag, $imagename,$conn){
          $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `writter`,`tag`, `post_img`) 
          VALUES ('$title','$descri','$category','$post_date','$writter','$tag','$imagename');";

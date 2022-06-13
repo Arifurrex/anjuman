@@ -19,7 +19,7 @@ html {
   --fw-reg: 400;
   --fw-bold: 500;
   --fw-bolder: 700;
-  --fw-ligh: 200;
+  --fw-light: 200;
   --fw-reg: 400;
   --fw-bold: 700;
   --fw-bolder: 900;
@@ -28,49 +28,55 @@ html {
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
 
-  --primary: hsl(141, 64%, 37%);
-  --secondary: hsl(141, 5%, 95%);
+  --primary:hsl(0, 0%, 100%);
+  --secondary: hsl(141, 64%, 37%);
   --accent: hsl(101, 64%, 47%);
 
-  --clr-2: hsl(164, 84%, 15%);
-  --c-green-0: hsl(141, 88%, 60%);
-  --c-green-1: hsl(141, 88%, 40%);
-  --c-green-2: hsl(141, 88%, 30%);
-  --c-green-3: hsl(141, 88%, 20%);
-  --c-green-01: hsl(159, 88%, 32%, 15%);
+  --txt-primary:hsl(230, 16%, 30%);
+  --txt-secondary:#1d1d1d;
+  --txt-accent:hsl(0, 0%, 53%);
+
+  --boder-primary:hsl(0, 2%, 88%);
+
+  // --clr-2: hsl(164, 84%, 15%);
+  // --c-green-0: hsl(141, 88%, 60%);
+  // --c-green-1: hsl(141, 88%, 40%);
+  // --c-green-2: hsl(141, 88%, 30%);
+  // --c-green-3: hsl(141, 88%, 20%);
+  // --c-green-01: hsl(159, 88%, 32%, 15%);
   // --clr-ligh: #fefeff;
-  --clr-ligh: #a7c5eb;
-  --clr-red: #d7385e;
-  --clr-greeny: #0a993c;
+  // --clr-ligh: #a7c5eb;
+  // --clr-red: #d7385e;
+  // --clr-greeny: #0a993c;
   // --clr-radish: #03506f;
-  --clr-radish: #0a993c;
-  --clr-subradish: #ecaece;
-  --clr-lessradish: #c1c8c7;
-  --clr-dark: #1d1d1f;
-  --clr-hash: #dfdfe0;
-  --clr-hashligh: #3c3c3e;
-  --clr-backgold: #0b2735;
-  --clr-back: #a3ddcb;
-  --clr-VeryDarkMagenta: hsl(300, 43%, 22%);
-  --clr-SoftPink: hsl(333, 80%, 67%);
-  --clr-DarkGrayishMagenta: hsl(303, 10%, 53%);
-  --clr-LightGrayishMagenta: hsl(300, 24%, 96%);
-  --clr-White: hsl(0, 0%, 100%);
-  --clr-ligh: #f8efd4;
-  --clr-orange: #e49f1f;
-  --clr-red: #d7385e;
-  --clr-dark: #132743;
-  --clr-hash: #2d3541;
+  // --clr-radish: #0a993c;
+  // --clr-subradish: #ecaece;
+  // --clr-lessradish: #c1c8c7;
+  // --clr-dark: #1d1d1f;
+  // --clr-hash: #dfdfe0;
+  // --clr-hashligh: #3c3c3e;
+  // --clr-backgold: #0b2735;
+  // --clr-back: #a3ddcb;
+  // --clr-VeryDarkMagenta: hsl(300, 43%, 22%);
+  // --clr-SoftPink: hsl(333, 80%, 67%);
+  // --clr-DarkGrayishMagenta: hsl(303, 10%, 53%);
+  // --clr-LightGrayishMagenta: hsl(300, 24%, 96%);
+  // --clr-White: hsl(0, 0%, 100%);
+  // --clr-ligh: #f8efd4;
+  // --clr-orange: #e49f1f;
+  // --clr-red: #d7385e;
+  // --clr-dark: #132743;
+  // --clr-hash: #2d3541;
   // --clr-bg: #0e0e23;
-  --clr-bg: #c5f8d7;
-  --clr-secbg: #252954;
-  --bgglass-clr: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
-  --bgglass2-clr: linear-gradient(
-    to bottom right,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.05),
-    rgba(255, 255, 255, 0.486)
-  );
+  // --clr-bg: #c5f8d7;
+  // --clr-secbg: #252954;
+  // --bgglass-clr: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  // --bgglass2-clr: linear-gradient(
+  //   to bottom right,
+  //   rgba(255, 255, 255, 0.2),
+  //   rgba(255, 255, 255, 0.05),
+  //   rgba(255, 255, 255, 0.486)
+  // );
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   --bs1: 0.25em 0.25em 0.75em rgba(251, 251, 251, 0.25), 0.125em 0.125em 0.25em rgba(250, 249, 249, 0.15);
   --bsglass: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa, 1px 1px 2px #555;
@@ -78,14 +84,12 @@ html {
   --delay: 0s;
 }
 // Neutral
-$white: hsl(0, 0%, 100%);
-$dark-desaturated-blue: hsl(236, 21%, 26%);
-// $very-dark-blue: hsl(235, 16%, 14%);
-// $very-dark-mostly-black-blue: hsl(234, 17%, 12%);
-$very-dark-blue: #251d2c; // Color taken with photoshop
-$very-dark-mostly-black-blue: #1e1e28; // Color taken with photoshop
-$top-card: #2c2c44; // Color taken with photoshop
-$bottom-card: #34364f; // Color taken with photoshop
+// $white: hsl(0, 0%, 100%);
+// $dark-desaturated-blue: hsl(236, 21%, 26%);
+// $very-dark-blue: #251d2c; // Color taken with photoshop
+// $very-dark-mostly-black-blue: #1e1e28; // Color taken with photoshop
+// $top-card: #2c2c44; // Color taken with photoshop
+// $bottom-card: #34364f; // Color taken with photoshop
 @media (min-width: 800px) {
   :root {
     --fs-h1: 2.5rem;

@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     font-size: 1rem;
     font-size: clamp(1rem, calc(3vw+1rem), 1.3rem);
-    color: var(--secondary);
+    color: var(--primary);
     text-transform: uppercase;
     padding: 0.5em 2em;
     position: relative;

@@ -49,15 +49,6 @@ function invalidpas($pas)
     }
     return $result;
 }  
-// function createUser($conn,$firstName,$lastName,$username,$pas,$role)
-// {
-//    $quer = "INSERT INTO `user`(`first_name`, `last_name`, `username`, `password`, `role`) 
-//    VALUES ('$firstName','$lastName','$username','$pas','$role')";
-//    mysqli_query($conn,$quer) OR die('query failed.');
-//    header('location:http://localhost:3000/admin/all-users.php?msg=success');
-// }
-
-
 function createUser($conn,$firstName,$lastName,$username,$pas,$role)
 {
    $quer = "INSERT INTO `user`(`first_name`, `last_name`, `username`, `password`, `role`) 
@@ -75,64 +66,31 @@ function createUser($conn,$firstName,$lastName,$username,$pas,$role)
    exit();
 }
 
-// function emptyInputlogin($loginusername,$loginpass){
-//     if(empty($loginusername) || empty($loginpass)){
-//         $result=true;
-//     }else{
-//         $result=false;
-//     }
-//     return $result;
-// }
-//  function loginuser($conn,$loginusername){
-//     $sqlie="SELECT * FROM user WHERE username ='$loginusername' ";
-//     mysqli_query($conn,$sqlie) OR die('query failed.');
-//     session_start();
-//     $_SESSION['username']='$loginusername';
-//     $_SESSION['password']='$loginpass';
-//     header('location:http://localhost:3000/admin/add-user.php?msg=loginsuccess');
-//  }
-
-// pos 
-function emptyinput($title,$descri,$category){
-    if(empty($title) || empty($descri) || empty($category)){
-       $result=true;
-    }else{
-        $result=false;
-    }
+// post 
+function emptyinput($title,$descri,$category, $writter, $tag){
+    (empty($title) || empty($descri) || empty($category) || empty($writter) || empty($tag)) ? $result=true : $result=false;
     return $result;
     }
-    function inserpos($title,$descri,$category,$post_date,$author,$imagename,$conn){
-         $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `author`, `post_img`) 
-         VALUES ('$title','$descri','$category','$post_date',$author,'$imagename');";
+    function emptyTitle($title){ 
+        empty($title)? $result=true:$result=false;
+        return $result;
+    }
+    function emptyDescription($descri){ 
+        (empty($descri))? $result=true : $result=false;
+        return $result;
+    }
+    function emptyCategory($category){
+     (empty($category)) ? $result = true : $result = false;
+    return $result;
+    }
+
+    function insertpost($title,$descri,$category,$post_date,$writter, $tag, $imagename,$conn){
+         $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `writter`,`tag`, `post_img`) 
+         VALUES ('$title','$descri','$category','$post_date','$writter','$tag','$imagename');";
          $qu .="UPDATE `category` SET `post`= post + 1 WHERE `category_id`='$category'";
          mysqli_multi_query($conn,$qu);
-         header('location:https://www.anjumanehefajoth.com/admin/all-post.php?msg=success');
+         header('location:../admin/post/all-post.php?msg=success');
     }
-//     function inserpos($title,$descri,$category,$post_date,$author,$imagename,$conn){
-//         $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `author`, `post_img`) 
-//         VALUES (?,?,?,?,?,?)";
-//         $stmt=mysqli_stmt_init($conn);
-//         if(!mysqli_stmt_prepare($stmt,$qu)){
-//             header('location:http://localhost:3000/admin/add-user.php?error=stmtfailed!!');
-//           }
-//         mysqli_stmt_bind_param($stmt,"ssssis",$title,$descri,$category,$post_date,$author,$imagename);
-//         mysqli_stmt_execute($stmt);
-//         mysqli_stmt_close($stmt);
-//         header('location:http://localhost:3000/admin/all-post.php?msg=success');
-//    }
-// function inserpos($title,$descri,$category,$post_date,$author,$imagename,$conn){
-//     $qu="INSERT INTO `post`(`title`, `description`, `category`, `post_date`, `author`, `post_img`) 
-//     VALUES (?,?,?,?,?,?);";
-//     $qu .="UPDATE `category` SET `post`=post+1 WHERE `category_id`=$category";
-//     $stmt=mysqli_stmt_init($conn);
-//     if(!mysqli_stmt_prepare($stmt,$qu)){
-//         header('location:http://localhost:3000/admin/add-user.php?error=stmtfailed!!');
-//       }
-//     mysqli_stmt_bind_param($stmt,"ssssis",$title,$descri,$category,$post_date,$author,$imagename);
-//     mysqli_stmt_execute($stmt);
-//     mysqli_stmt_close($stmt);
-//     header('location:http://localhost:3000/admin/all-post.php?msg=success');
-// }
     // category
     function emptyinputcategory($category_name){
         if(empty($category_name)){
@@ -147,18 +105,42 @@ function emptyinput($title,$descri,$category){
              VALUES (?)";
              $stmt=mysqli_stmt_init($conn);
              if(!mysqli_stmt_prepare($stmt,$qur)){
-                header('location:https://www.anjumanehefajoth.com/admin/category.php?msg=success');
+                header('location:../admin/category/category.php?msg=success');
                 exit(); 
              }
              mysqli_stmt_bind_param($stmt,"s",$category_name);
              mysqli_stmt_execute($stmt);
              mysqli_stmt_close($stmt);
-             header('location:https://www.anjumanehefajoth.com/admin/category.php?msg=success');
+             header('location:../admin/category/category.php?msg=success');
              exit();
         }
-    //   edi caegory 
+//   edi caegory 
 
-
+// writter
+function emptyinputwritter($writter_name)
+{
+    if (empty($writter_name)) {
+        $result = true;
+    } else {
+        $result = false;
+    }
+    return $result;
+}
+function insewritter($writter_name, $conn)
+{
+    $qur = "INSERT INTO `writter`( `writter_name`) 
+             VALUES (?)";
+    $stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $qur)) {
+        header('location:../admin/newsWritter/writter.php?msg=success');
+        exit();
+    }
+    mysqli_stmt_bind_param($stmt, "s", $writter_name);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
+    header('location:../admin/newsWritter/writter.php?msg=success');
+    exit();
+}
 // ==========================================
     // member function
 // ==========================================    

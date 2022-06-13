@@ -1,5 +1,5 @@
 <?php
-include "../includes/dbh.inc.php";
+include "../../includes/dbh.inc.php";
 $poid=$_GET['poid'];
 $caid=$_GET['caid'];
 $sqli="select * from post  where post_id='$poid'";
@@ -9,7 +9,7 @@ unlink("../images/".$row['post_img']);
 $sql="delete from post where post_id='$poid';";
 $sql.="update category set post=post-1 where category_id='$caid'";
 if(mysqli_multi_query($conn,$sql)){
-    header('location:http://anjumanehefajoth.com/admin/all-post.php?msg=delete');
+    header('location:all-post.php?msg=delete');
 }else{
     echo 'queri failed!!';
 }
